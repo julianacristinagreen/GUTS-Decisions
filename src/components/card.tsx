@@ -1,7 +1,9 @@
-export default function Card(string Question){
+import "./card.css"
+
+export default function Card(){
     return(
         <div>
-            <h1>{Question}</h1>
+            <h1>Question</h1>
         </div>
     )
 }
