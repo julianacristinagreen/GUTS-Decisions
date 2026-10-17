@@ -1,0 +1,37 @@
+[
+  {
+    "id": "adult-promotion",
+    "prompt": "You're offered a promotion. It means more money and much longer hours.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Accept", "effect": { "wealth": 20, "energy": -15, "social": -5 }, "outcome": "Bigger office, bigger salary. You see your friends less." },
+    "rightCard": { "label": "Decline", "effect": { "happiness": 5, "wealth": -5 }, "outcome": "You stay where you are, and you're home for dinner every night." }
+  },
+  {
+    "id": "adult-house",
+    "prompt": "You've found a house you love. It's at the very top of your budget.",
+    "minAge": 36, "maxAge": 45,
+    "leftCard":  { "label": "Buy it", "effect": { "wealth": -20, "happiness": 15 }, "outcome": "The mortgage is terrifying. The garden is perfect." },
+    "rightCard": { "label": "Keep renting", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "Your landlord still won't fix the boiler." }
+  },
+  {
+    "id": "adult-marathon",
+    "prompt": "A friend signs you both up for a marathon, six months from now.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Train for it", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "You finish, limping, in four hours fifty. You cry at the finish line." },
+    "rightCard": { "label": "Back out", "effect": { "social": -10, "energy": 5 }, "outcome": "You cheer them on from mile 20 with a bacon sandwich." }
+  },
+  {
+    "id": "adult-old-friend",
+    "prompt": "An old school friend messages out of the blue. They're in town this weekend.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Meet up", "effect": { "social": 15, "happiness": 10, "energy": -5 }, "outcome": "Within ten minutes it's like you never left school." },
+    "rightCard": { "label": "Leave it on read", "effect": { "energy": 5, "social": -10 }, "outcome": "You meant to reply. A year goes by." }
+  },
+  {
+    "id": "adult-burnout",
+    "prompt": "Your doctor says you're burning out and should take some time off.",
+    "minAge": 38, "maxAge": 49,
+    "leftCard":  { "label": "Take the time", "effect": { "health": 15, "energy": 20, "wealth": -10 }, "outcome": "Two weeks of nothing. You remember who you are." },
+    "rightCard": { "label": "Push through", "effect": { "wealth": 10, "health": -15, "energy": -10 }, "outcome": "You hit your targets. Your hands won't stop shaking." }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "old-early-retirement",
+    "prompt": "Your company offers you early retirement on a decent package.",
+    "minAge": 50, "maxAge": 58,
+    "leftCard":  { "label": "Retire", "effect": { "happiness": 15, "energy": 15, "wealth": -10 }, "outcome": "You wake up on a Monday with nowhere to be. It takes some getting used to." },
+    "rightCard": { "label": "Keep working", "effect": { "wealth": 15, "energy": -10 }, "outcome": "The money keeps coming in. You keep thinking about what you'd do with the time." }
+  },
+  {
+    "id": "old-health-check",
+    "prompt": "A letter invites you for a free health check. You feel fine.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Book it", "effect": { "health": 15, "energy": -5 }, "outcome": "They catch something early. The nurse says you were lucky." },
+    "rightCard": { "label": "Bin it", "effect": { "health": -15 }, "outcome": "You feel fine. For now." }
+  },
+  {
+    "id": "old-grandkids",
+    "prompt": "Your family asks if you'll look after the grandkids every Wednesday.",
+    "minAge": 52, "maxAge": 60,
+    "leftCard":  { "label": "Of course", "effect": { "social": 15, "happiness": 10, "energy": -15 }, "outcome": "Wednesdays become the best and most exhausting day of the week." },
+    "rightCard": { "label": "I need my time", "effect": { "energy": 10, "social": -10 }, "outcome": "You get your Wednesdays back. The house is very quiet." }
+  },
+  {
+    "id": "old-motorbike",
+    "prompt": "You've always wanted a motorbike. You've got the savings now.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Buy it", "effect": { "happiness": 20, "wealth": -15, "health": -10 }, "outcome": "You ride along the coast at sunrise. Your knees hate you." },
+    "rightCard": { "label": "Too old for that", "effect": { "wealth": 5, "happiness": -10 }, "outcome": "You still look them up online now and then." }
+  },
+  {
+    "id": "old-reunion",
+    "prompt": "Your 40-year school reunion is coming up.",
+    "minAge": 55, "maxAge": 60,
+    "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 5, "energy": -5 }, "outcome": "Everyone's older. Everyone's exactly the same." },
+    "rightCard": { "label": "Skip it", "effect": { "energy": 5, "social": -5 }, "outcome": "You see the photos later. Mr. Henderson's house is still there." }
+  }
+]
