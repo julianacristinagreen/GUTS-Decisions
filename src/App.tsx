@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Game from "./frontend/game";
 import DecisionTree from "./frontend/decisionTree";
 import WelcomePage from "./frontend/welcome";
-import Stats from "./frontend/stats";
+import Stats from "./components/stats";
 
 function Home() {
   return (

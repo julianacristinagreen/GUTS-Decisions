@@ -1,0 +1,39 @@
+.label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0px;
+}
+
+
+.statsBox {
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    max-width: 30%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.progressBar {
+    accent-color: #DAB1DA;
+    background-color: lightgrey;
+    border-radius:20px;
+}
+
+.progressBar::-webkit-progress-bar {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.progressBar::-webkit-progress-value {
+    background-color: #DAB1DA;
+    border-radius: 10px;
+}
+
+.progressBar::-moz-progress-bar {
+    background-color: #DAB1DA;
+    border-radius: 10px;
+}
+
+.valueFraction {    
+    margin-left:20px;
+}
