@@ -14,23 +14,23 @@
 }
 
 .progressBar {
-    accent-color: #DAB1DA;
+    accent-color: #8B79B1;
     background-color: lightgrey;
     border-radius:20px;
 }
 
 .progressBar::-webkit-progress-bar {
-    background-color: lightblue;
+    background-color: #009CDE;
     border-radius: 10px;
 }
 
 .progressBar::-webkit-progress-value {
-    background-color: #DAB1DA;
+    background-color: #8B79B1;
     border-radius: 10px;
 }
 
 .progressBar::-moz-progress-bar {
-    background-color: #DAB1DA;
+    background-color: #8B79B1;
     border-radius: 10px;
 }
 
