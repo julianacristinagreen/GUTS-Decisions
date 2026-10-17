@@ -1,4 +1,4 @@
-import "./css/progressBar.css";
+import "./progressBar.css";
 
 type ProgressBarProps = {
     currentValue: number;

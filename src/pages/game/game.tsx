@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import Stats from "../components/stats";
-import Card from "../components/card";
-import { ChoiceButton } from "../components/buttons";
-import { choose } from "../engine/engine";
-import type { GameState } from "../engine/types";
+import Stats from "../../components/stats/stats";
+import Card from "../../components/card/card";
+import { ChoiceButton } from "../../components/buttons/buttons";
+import { choose } from "../../engine/engine";
+import type { GameState } from "../../engine/types";
 
 export default function Game() {
     const location = useLocation();

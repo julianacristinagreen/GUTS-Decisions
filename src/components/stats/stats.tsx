@@ -1,5 +1,5 @@
-import "./css/stats.css";
-import {ProgressBar} from "./progressBar";
+import "./stats.css";
+import {ProgressBar} from "../progress-bar/progressBar";
 
 type Stats = {
     happiness: number;

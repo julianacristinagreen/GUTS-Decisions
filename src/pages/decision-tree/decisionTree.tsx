@@ -1,6 +1,6 @@
-import DecisionNode from "../components/decisionNode";
-import { allDecisions } from "../engine/cards";
-import type { HistoryEntry } from "../engine/types";
+import DecisionNode from "../../components/decision-node/decisionNode";
+import { allDecisions } from "../../engine/cards";
+import type { HistoryEntry } from "../../engine/types";
 
 export default function DecisionTree() {
     const historyChoices: HistoryEntry[] = [

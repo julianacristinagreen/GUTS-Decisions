@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Game from "./frontend/game";
-import DecisionTree from "./frontend/decisionTree";
-import WelcomePage from "./frontend/welcome";
-import Stats from "./components/stats";
-import Card from "./components/card";
+import Game from "./pages/game/game";
+import DecisionTree from "./pages/decision-tree/decisionTree";
+import WelcomePage from "./pages/welcome/welcome";
+import Stats from "./components/stats/stats";
+import Card from "./components/card/card";
 
 function App() {
   return (
