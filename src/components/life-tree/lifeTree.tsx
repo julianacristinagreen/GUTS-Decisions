@@ -13,7 +13,7 @@ export const LifeTree = ({ onFinish }: LifeTreeProps) => {
     const [life] = useState(randomLife);
     return (
         <svg className="life-tree" viewBox={`-10 -10 ${SIZE + 20} ${SIZE + 20}`}>
-            {choices.map((path) => <path key={path} className="choice" d={path} />)}
+            {choices.map(({ d }) => <path key={d} className="choice" d={d} />)}
             <path className="life" d={life} pathLength={1} onAnimationEnd={onFinish} />
             <circle className="start" cx={0} cy={SIZE / 2} r={7} />
         </svg>

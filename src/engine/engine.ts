@@ -6,6 +6,7 @@ const START_STATS: Stats = { happiness: 50, wealth: 50, health: 50, social: 50, 
 const MAX_AGE = 60;
 
 const ageStep = (age: number) => (age < 18 ? 3 : age < 35 ? 1 : 4);
+
 const clamp = (n: number) => Math.min(100, Math.max(0, n));
 
 export const generateDecision = (seed: string, age: number, history: HistoryEntry[]): Decision | null => {
