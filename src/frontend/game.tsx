@@ -1,5 +1,5 @@
-export default function testPage(){
-    return (
-        <p> Test</p>
-    )
+
+export default function Game() {
+  return <p>hello</p>;
+=======
 }
