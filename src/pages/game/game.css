@@ -2,6 +2,14 @@
     margin: 20px;
 }
 
+.gameLayout{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    gap: 25px;
+    width: 100%;
+}
+
 .choices {
     justify-content: center;
     align-self: center;
