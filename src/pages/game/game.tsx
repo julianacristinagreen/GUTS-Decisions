@@ -5,6 +5,7 @@ import Card from "../../components/card/card";
 import { ChoiceButton } from "../../components/buttons/buttons";
 import { choose } from "../../engine/engine";
 import type { GameState } from "../../engine/types";
+import "./game.css";
 
 export default function Game() {
     const location = useLocation();
@@ -21,26 +22,34 @@ export default function Game() {
         setGame(nextGame);
     }
 
+    const [hovered, setHovered] = useState<"left" | "right" | null>(null);
+
+    const effect = hovered === "left" ? question?.leftCard.effect : hovered === "right" ? question?.rightCard.effect :null;
+
     return (
         <>
-        <Stats stats={game.stats}/>
+        <Stats stats={game.stats} previewEffect={effect ?? null}/>
 
             {question ? (
                 <>
                     <Card question={question} />
 
-                    <section className="choices" aria-label="Choose an option">
+                    <div className="choices">
                         <ChoiceButton
                             option="a"
                             text={question.leftCard.label}
                             onClick={() => makeChoice("left")}
+                            onMouseEnter={() => setHovered("left")}
+                            onMouseLeave={() => setHovered(null)}
                         />
                         <ChoiceButton
                             option="b"
                             text={question.rightCard.label}
                             onClick={() => makeChoice("right")}
+                            onMouseEnter={() => setHovered("right")}
+                            onMouseLeave={() => setHovered(null)}
                         />
-                    </section>
+                    </div>
                 </>
             ) : (
                 <p>{game.alive ? "There are no more decisions." : "Game over."}</p>

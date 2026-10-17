@@ -11,9 +11,10 @@ type Stats = {
 
 type StatsProps = {
     stats: Stats;
+    previewEffect: Partial<Stats> | null; 
 };
 
-export default function Stats({ stats }: StatsProps) {
+export default function Stats({ stats, previewEffect }: StatsProps) {
  const stat_values = {
     Health: stats.health,
     Wealth: stats.wealth,
@@ -22,14 +23,20 @@ export default function Stats({ stats }: StatsProps) {
     Social: stats.social,
   };
 
+  const preview_values = {
+      Health: stats.health + (previewEffect?.health ?? 0),
+      Wealth: stats.wealth + (previewEffect?.wealth ?? 0),
+      Energy: stats.energy + (previewEffect?.energy ?? 0),
+      Happiness: stats.happiness + (previewEffect?.happiness ?? 0),
+      Social: stats.social + (previewEffect?.social ?? 0),
+  };
+
   function display_stats() {
   return Object.entries(stat_values).map(([stat, value]) => (
       <p key={stat}>
-      {<ProgressBar
-    currentValue={value}
-    label={stat}
-    maxValue={100}
-/>}
+      {<ProgressBar currentValue={value} label={stat} maxValue={100} 
+          previewValue={Math.max(0, Math.min(100, preview_values[stat as keyof typeof preview_values]))}
+    />}
       </p>
     ));
   }
