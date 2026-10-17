@@ -5,6 +5,7 @@ export interface GameState {
     alive: boolean;
     currentDecision: Decision | null;
     history: HistoryEntry[];
+    causeOfDeath: keyof Stats | "old-age" | null;
 }
 
 export interface HistoryEntry {
