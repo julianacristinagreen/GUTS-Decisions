@@ -1,4 +1,4 @@
-import "./css/decisionNode.css"
+import "./decisionNode.css"
 type DecisionNodeProps = {
     picked: string;
     choices: string[];

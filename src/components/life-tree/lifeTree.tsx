@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { allChoices, randomLife, SIZE } from "../utils/lifeTree";
-import "./css/lifeTree.css";
+import { allChoices, randomLife, SIZE } from "../../utils/lifeTree";
+import "./lifeTree.css";
 
 const choices = allChoices();
 

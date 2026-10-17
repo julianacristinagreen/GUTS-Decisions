@@ -1,8 +1,8 @@
-import { newGame } from "../engine/engine";
-export {rngFor} from "../engine/rng";
+import { newGame } from "../../engine/engine";
+export {rngFor} from "../../engine/rng";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { LifeTree } from "../components/lifeTree";
+import { LifeTree } from "../../components/life-tree/lifeTree";
 import "./welcome.css";
 
 export default function WelcomePage(){

@@ -1,4 +1,4 @@
-import "./css/buttons.css";
+import "./buttons.css";
 
 type ChoiceButtonProps = {
   option: "a" | "b";

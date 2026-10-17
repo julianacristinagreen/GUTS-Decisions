@@ -1,5 +1,5 @@
-import "./css/card.css"
-import type { Decision } from "../engine/types";
+import "./card.css"
+import type { Decision } from "../../engine/types";
 
 type CardProps = {
     question: Decision;
