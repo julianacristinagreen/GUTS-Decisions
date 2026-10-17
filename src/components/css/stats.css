@@ -1,0 +1,21 @@
+h2 {
+    color: #DAB1DA;
+    margin-top: 0px;
+}
+
+.statsBox {
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 10px;
+    max-width: 30%;
+}
+.statsRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.statsRow p {
+    margin: 0;
+}
