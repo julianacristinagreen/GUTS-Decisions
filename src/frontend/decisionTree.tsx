@@ -1,22 +1,47 @@
 import DecisionNode from "../components/decisionNode";
 import { allDecisions } from "../engine/cards";
-import type { GameState, HistoryEntry } from "../engine/types";
+import type { HistoryEntry } from "../engine/types";
 
-export default function DecisionTree({game}:{game:GameState}){
-    let historyChoices: HistoryEntry[] = [
-        {age: 12, decisionId: "adult-promotion", picked: "left"}
+export default function DecisionTree() {
+    const historyChoices: HistoryEntry[] = [
+        { age: 12, decisionId: "adult-promotion", picked: "left" },
+        { age: 13, decisionId: "adult-promotion", picked: "right" },
+        { age: 13, decisionId: "adult-promotion", picked: "right" }
     ];
-    // game.history;
-    
-    return(
-        historyChoices.forEach((choice : HistoryEntry) => {
-            console.info("I am trying to do nodes now");
-            allDecisions.forEach(decision => {
-                if (choice.decisionId == decision.id){
-                    console.info("decision", decision.id);
-                    <DecisionNode choices = {[decision.leftCard.label, decision.rightCard.label]}/>
-                }
-            });
-        })
-    )
+
+    function renderDecision(index: number): React.ReactNode {
+        if (index >= historyChoices.length) {
+            return null;
+        }
+
+        const choice = historyChoices[index];
+
+        const decision = allDecisions.find(
+            (d) => d.id === choice.decisionId
+        );
+
+        if (!decision) {
+            return renderDecision(index + 1);
+        }
+
+        return (
+            <DecisionNode
+                key={`${choice.age}-${choice.decisionId}-${index}`}
+                choices={[
+                    decision.leftCard.label,
+                    decision.rightCard.label
+                ]}
+                picked={choice.picked}
+                question={decision.prompt}
+                children={renderDecision(index + 1)}
+            >
+            </DecisionNode>
+        );
+    }
+
+    return (
+        <div className="decisionTree">
+            {renderDecision(0)}
+        </div>
+    );
 }
