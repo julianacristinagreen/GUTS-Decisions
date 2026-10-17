@@ -1,5 +1,3 @@
-
 export default function Game() {
-  return <p>hello</p>;
-=======
+  return <p>shello</p>;
 }
