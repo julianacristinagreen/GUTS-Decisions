@@ -4,8 +4,8 @@ type ChoiceButtonProps = {
   option: "a" | "b";
   text: string;
   onClick: () => void;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 };
 
 export function ChoiceButton({ option, text, onClick, onMouseEnter, onMouseLeave }: ChoiceButtonProps) {
