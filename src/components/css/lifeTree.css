@@ -1,0 +1,30 @@
+.life-tree {
+  width: 100%;
+  max-width: 576px;
+  flex: 1;
+  fill: none;
+}
+
+.life-tree .choice {
+  stroke: #d7d3d3;
+  stroke-width: 1;
+}
+
+.life-tree .start {
+  fill: #0088b0;
+}
+
+/* The chosen life draws itself in; LifeTree's onFinish fires when it ends.
+   pathLength={1} on the path means a dash of 1 covers the whole line. */
+.life-tree .life {
+  stroke: #0088b0;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-life 6s ease-in-out 0.5s forwards;
+}
+
+@keyframes draw-life {
+  to { stroke-dashoffset: 0; }
+}
