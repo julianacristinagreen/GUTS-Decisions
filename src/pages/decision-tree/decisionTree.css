@@ -1,0 +1,86 @@
+/* The reveal is quiet and almost wordless; colours match the welcome page */
+.reveal {
+  --ink: #201e1d;
+  --muted: #444141;
+  --accent: #0088b0;
+
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.reveal-tree {
+  width: 100%;
+  max-width: 576px;
+  fill: none;
+}
+
+.reveal-branch {
+  stroke: #b5b0b0;
+  stroke-width: 1;
+}
+
+.reveal-life {
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.reveal-here {
+  fill: var(--accent);
+  transition: cx 0.6s ease, cy 0.6s ease;
+}
+
+.reveal-text {
+  max-width: 576px;
+  min-height: 140px;
+  text-align: center;
+}
+
+.reveal-text p {
+  margin: 8px 0;
+}
+
+.reveal-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.reveal-age {
+  color: var(--muted);
+}
+
+.reveal-question {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.reveal-picked {
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.reveal-unpicked {
+  color: var(--muted);
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.reveal-buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 576px;
+  justify-content: center;
+}
+
+.reveal-buttons .choice {
+  height: auto;
+}
