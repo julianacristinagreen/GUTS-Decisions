@@ -1,0 +1,44 @@
+[
+  {
+    "id": "baby-first-words",
+    "prompt": "Your parents lean in, waiting for your first word.",
+    "minAge": 0, "maxAge": 2,
+    "leftCard":  { "label": "Mama", "effect": { "social": 10, "happiness": 5 }, "outcome": "Your mum cries. Your dad pretends he isn't jealous." },
+    "rightCard": { "label": "No", "effect": { "happiness": 10, "social": -5 }, "outcome": "You say it with total conviction. It becomes your favourite word for a year." }
+  },
+  {
+    "id": "toddler-vegetables",
+    "prompt": "A plate of broccoli sits in front of you. Your parents are watching.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Eat it", "effect": { "health": 10, "happiness": -5 }, "outcome": "It tastes like a tree. You get a gold star sticker." },
+    "rightCard": { "label": "Throw it", "effect": { "happiness": 10, "health": -5 }, "outcome": "It hits the dog. The dog doesn't want it either." }
+  },
+  {
+    "id": "child-bike",
+    "prompt": "Your friends dare you to ride your bike down the steep hill.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Do it", "effect": { "happiness": 10, "health": -15 }, "outcome": "You're flying down the hill, on top of the world and then you crash." },
+    "rightCard": { "label": "Walk it down", "effect": { "social": -10 }, "outcome": "They call you chicken and make noises for a week." }
+  },
+  {
+    "id": "ding-dong-ditch",
+    "prompt": "The older kids want you to ring grumpy Mr. Henderson's doorbell and run.",
+    "minAge": 7, "maxAge": 12,
+    "leftCard":  { "label": "Ring it", "effect": { "social": 15, "happiness": 5, "energy": -10 }, "outcome": "You ring and sprint. He chases you two streets in his slippers. The older kids let you hang out all summer." },
+    "rightCard": { "label": "Go home", "effect": { "social": -10, "energy": 5 }, "outcome": "You head home early. Through the window you watch them laughing without you." }
+  },
+  {
+    "id": "teen-party",
+    "prompt": "There's a party at Jess's house the night before your exam.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 10, "energy": -15 }, "outcome": "Best night of the year. You sleep through half the exam." },
+    "rightCard": { "label": "Revise", "effect": { "wealth": 5, "social": -10 }, "outcome": "You ace it. Everyone's photos from the party are all anyone talks about." }
+  },
+  {
+    "id": "teen-job",
+    "prompt": "The chip shop down the road is hiring weekend staff.",
+    "minAge": 14, "maxAge": 17,
+    "leftCard":  { "label": "Apply", "effect": { "wealth": 15, "energy": -10 }, "outcome": "You smell of vinegar every Saturday, but you've got your own money." },
+    "rightCard": { "label": "Enjoy weekends", "effect": { "happiness": 10, "energy": 5 }, "outcome": "You spend your weekends doing nothing at all, and it's great." }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ya-university",
+    "prompt": "You've got a university offer, and a mate's offering you a job at his dad's garage.",
+    "minAge": 18, "maxAge": 19,
+    "leftCard":  { "label": "University", "effect": { "wealth": -15, "social": 10, "happiness": 5 }, "outcome": "Three years, a lot of debt, and friends you'll keep for life." },
+    "rightCard": { "label": "The garage", "effect": { "wealth": 15, "social": -5 }, "outcome": "You're earning while your friends are borrowing. You miss them sometimes." }
+  },
+  {
+    "id": "ya-gap-year",
+    "prompt": "Your friend is backpacking around South America for six months and wants you to come.",
+    "minAge": 19, "maxAge": 25,
+    "leftCard":  { "label": "Book the flight", "effect": { "happiness": 15, "wealth": -15, "energy": -5 }, "outcome": "You come back broke, tanned and full of stories nobody asked for." },
+    "rightCard": { "label": "Stay put", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "You follow the trip on Instagram from your desk." }
+  },
+  {
+    "id": "ya-gym",
+    "prompt": "A gym opens on your street with a January deal.",
+    "minAge": 18, "maxAge": 35,
+    "leftCard":  { "label": "Sign up", "effect": { "health": 15, "wealth": -5, "energy": -5 }, "outcome": "You actually keep going. Even you're surprised." },
+    "rightCard": { "label": "Not for me", "effect": { "energy": 5, "health": -5 }, "outcome": "You walk past it every day on the way to the takeaway." }
+  },
+  {
+    "id": "ya-job-offer",
+    "prompt": "A start-up offers you a job: half the salary of your current one, plus shares.",
+    "minAge": 22, "maxAge": 32,
+    "leftCard":  { "label": "Take the risk", "effect": { "wealth": -10, "happiness": 10, "energy": -15 }, "outcome": "Long nights, free pizza, and a job you actually care about." },
+    "rightCard": { "label": "Play it safe", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "The pay is steady. Every day feels much the same." }
+  },
+  {
+    "id": "ya-move-in",
+    "prompt": "Your partner asks if you want to move in together.",
+    "minAge": 23, "maxAge": 35,
+    "leftCard":  { "label": "Yes", "effect": { "social": 10, "happiness": 10, "wealth": 5 }, "outcome": "You split the rent, and argue about the thermostat." },
+    "rightCard": { "label": "Not yet", "effect": { "social": -15, "happiness": -5 }, "outcome": "It goes quiet. A month later, they've moved on." }
+  },
+  {
+    "id": "ya-night-out",
+    "prompt": "It's Friday, you're exhausted, and the group chat is going out.",
+    "minAge": 18, "maxAge": 30,
+    "leftCard":  { "label": "Go out", "effect": { "social": 10, "energy": -15, "health": -5 }, "outcome": "Brilliant night. Sunday comes and you're still recovering." },
+    "rightCard": { "label": "Early night", "effect": { "energy": 15, "social": -5 }, "outcome": "Ten hours of sleep. You've never felt more alive." }
+  }
+]
