@@ -1,3 +1,3 @@
 export default function Game() {
-  return <p>shello</p>;
+  return <p>hello</p>;
 }
