@@ -1,21 +1,25 @@
 import "./css/stats.css";
 import {ProgressBar} from "./progressBar";
 
-export default function Stats() {
-  let health = 0;
-  let wealth = 10;
-  let energy = 20;
-  let happiness = 50;
-  let social = 80;
-  let intelligence = 60;
+type Stats = {
+    happiness: number;
+    wealth: number;
+    health: number;
+    social: number;
+    energy: number;
+};
 
+type StatsProps = {
+    stats: Stats;
+};
+
+export default function Stats({ stats }: StatsProps) {
  const stat_values = {
-    Health: health,
-    Wealth: wealth,
-    Energy: energy,
-    Happiness: happiness,
-    Social: social,
-    Intelligence: intelligence
+    Health: stats.health,
+    Wealth: stats.wealth,
+    Energy: stats.energy,
+    Happiness: stats.happiness,
+    Social: stats.social,
   };
 
   function display_stats() {
