@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframe – Outcome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <span class="wireframe-label">Wireframe 2 · Outcome</span>
+
+  <main class="screen">
+    <aside class="path panel" aria-label="Your path">
+      <h2 class="panel-title">Your path</h2>
+      <ol class="path-list">
+        <li class="path-item">
+          <span class="path-num">Q1</span>
+          <span class="path-badge b">B</span>
+          <span class="path-text">Took the job</span>
+        </li>
+        <li class="path-item">
+          <span class="path-num">Q2</span>
+          <span class="path-badge a">A</span>
+          <span class="path-text">Skipped breakfast</span>
+        </li>
+        <li class="path-item">
+          <span class="path-num">Q3</span>
+          <span class="path-badge a">A</span>
+          <span class="path-text">Went to the party</span>
+        </li>
+      </ol>
+    </aside>
+
+    <section class="question">
+      <h2 class="panel-title">Outcome</h2>
+      <span class="outcome-choice">You chose A · Go to the party</span>
+      <p class="outcome-text">
+        You had a great night and made new friends, but you're exhausted
+        and walk into the exam underprepared.
+      </p>
+    </section>
+
+    <aside class="stats panel" aria-label="Stats">
+      <h2 class="panel-title">Stats</h2>
+      <div id="stats" class="stat-list"></div>
+      <p class="stats-hint">Changes from your last choice.</p>
+    </aside>
+
+    <!-- What the two buttons do on this screen is still undecided -->
+    <section class="choices">
+      <button class="choice choice-a">
+        <span class="choice-key">Button A</span>
+        <span class="choice-text">Continue</span>
+      </button>
+      <button class="choice placeholder" disabled>
+        <span class="choice-key">Button B</span>
+        <span class="choice-text">TBD</span>
+      </button>
+    </section>
+  </main>
+
+  <script src="stats.js"></script>
+  <script>
+    // Values before the choice, with the chosen option's effects shown on top
+    const values = { Health: 70, Wealth: 45, Energy: 60, Happiness: 55, Social: 40, Intelligence: 65 };
+    const effects = { Happiness: 15, Social: 20, Energy: -20, Intelligence: -10 };
+    const el = document.getElementById("stats");
+    renderStats(el, values);
+    showDeltas(el, values, effects);
+  </script>
+</body>
+</html>

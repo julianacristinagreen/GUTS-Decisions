@@ -1,4 +1,5 @@
 export interface GameState {
+    seed: string;
     age: number;
     stats: Stats;
     alive: boolean;

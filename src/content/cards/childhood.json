@@ -1,0 +1,93 @@
+[
+  {
+    "id": "baby-first-words",
+    "prompt": "Everyone is waiting for your first word. The sounds they hope to hear aren't the ones you've been practising.",
+    "minAge": 0, "maxAge": 2,
+    "leftCard":  { "label": "Mama", "effect": { "social": 10, "happiness": 5 }, "outcome": "Your mum cries. Your dad pretends he isn't jealous." },
+    "rightCard": { "label": "No", "effect": { "happiness": 10, "social": -5 }, "outcome": "You say it with total conviction. It becomes your favourite word for a year." }
+  },
+  {
+    "id": "toddler-vegetables",
+    "prompt": "The broccoli is getting cold. You don't like it, but the adults say you should at least try it.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Eat it", "effect": { "health": 10, "happiness": -5 }, "outcome": "It tastes like a tree. You get a gold star sticker." },
+    "rightCard": { "label": "Throw it", "effect": { "happiness": 10, "health": -5 }, "outcome": "It hits the dog. The dog doesn't want it either." }
+  },
+  {
+    "id": "child-bike",
+    "prompt": "The hill is steeper than it looked. Your friends are waiting at the bottom, and you don't know how they'll react if you turn back.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Do it", "effect": { "happiness": 10, "health": -15 }, "outcome": "You're flying down the hill, on top of the world and then you crash." },
+    "rightCard": { "label": "Walk it down", "effect": { "social": -10 }, "outcome": "They call you chicken and make noises for a week." }
+  },
+  {
+    "id": "ding-dong-ditch",
+    "prompt": "The older kids invite you to join their doorbell prank. Mr. Henderson lives alone, and you aren't sure he'd find it funny.",
+    "minAge": 7, "maxAge": 12,
+    "leftCard":  { "label": "Ring it", "effect": { "social": 15, "happiness": 5, "energy": -10 }, "outcome": "You ring and sprint. He chases you two streets in his slippers. The older kids let you hang out all summer." },
+    "rightCard": { "label": "Go home", "effect": { "social": -10, "energy": 5 }, "outcome": "You head home early. Through the window you watch them laughing without you." }
+  },
+  {
+    "id": "teen-party",
+    "prompt": "Jess's party is the night before an exam you care about. You haven't prepared as much as you hoped, and you don't want to miss out.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 10, "energy": -15 }, "outcome": "Best night of the year. You sleep through half the exam." },
+    "rightCard": { "label": "Revise", "effect": { "wealth": 5, "social": -10 }, "outcome": "You ace it. Everyone's photos from the party are all anyone talks about." }
+  },
+  {
+    "id": "teen-job",
+    "prompt": "The chip shop is hiring for weekends. The money would be yours, but weekends are also when your friends and family are free.",
+    "minAge": 14, "maxAge": 17,
+    "leftCard":  { "label": "Apply", "effect": { "wealth": 15, "energy": -10 }, "outcome": "You smell of vinegar every Saturday, but you've got your own money." },
+    "rightCard": { "label": "Enjoy weekends", "effect": { "happiness": 10, "energy": 5 }, "outcome": "You spend your weekends doing nothing at all, and it's great." }
+  },
+  {
+    "id": "baby-stairs",
+    "prompt": "You've just learned to climb. The stairs are tempting, while a pile of soft toys waits within reach.",
+    "minAge": 0, "maxAge": 2,
+    "leftCard":  { "label": "Climb the stairs", "effect": { "happiness": 10, "health": -10 }, "outcome": "You make it three steps. The next day a stair gate goes up." },
+    "rightCard": { "label": "Soft toys", "effect": { "energy": 5, "happiness": 5 }, "outcome": "You fall asleep face-down in a teddy bear." }
+  },
+  {
+    "id": "toddler-nursery",
+    "prompt": "At nursery drop-off, your mum says goodbye. You want to stay close, but the room is full of toys and other children.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Wave goodbye", "effect": { "social": 10, "energy": -5 }, "outcome": "By lunchtime you have a best friend called Max." },
+    "rightCard": { "label": "Cling to her leg", "effect": { "social": -10, "happiness": 5 }, "outcome": "She stays for an hour. The other kids stare." }
+  },
+  {
+    "id": "toddler-sharing",
+    "prompt": "Another child reaches for your favourite truck. You aren't sure they'll take care of it, and they don't have another toy.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Share it", "effect": { "social": 10, "happiness": -5 }, "outcome": "He snaps a wheel off. But now he's your friend." },
+    "rightCard": { "label": "Keep it", "effect": { "happiness": 5, "social": -10 }, "outcome": "You keep the truck. Nobody plays with you at break." }
+  },
+  {
+    "id": "child-instrument",
+    "prompt": "Your parents can pay for lessons, but practising will take up some of your free time. You're curious about the violin; your friends are heading to the park.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Learn the violin", "effect": { "energy": -10, "happiness": 10 }, "outcome": "Three years of screeching. Then one day it sounds like music." },
+    "rightCard": { "label": "Play outside", "effect": { "health": 10, "social": 5 }, "outcome": "You know every tree in the park by name." }
+  },
+  {
+    "id": "child-test",
+    "prompt": "During a test, you notice the answers on the next desk. You could copy them, but you wonder what you'll learn either way.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Copy", "effect": { "happiness": -10, "social": -5 }, "outcome": "You both got the same wrong answer. The teacher notices." },
+    "rightCard": { "label": "Do your own", "effect": { "energy": -10, "happiness": 5 }, "outcome": "You get a C. It's your C." }
+  },
+  {
+    "id": "teen-phone",
+    "prompt": "A newer phone has become a status symbol at school. Your brother's old one still works, but you're tired of being asked about it.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Beg for it", "effect": { "wealth": -10, "social": 10 }, "outcome": "You get it for your birthday, and you're on it constantly." },
+    "rightCard": { "label": "Make do", "effect": { "social": -5, "happiness": 5 }, "outcome": "After a week nobody notices. Neither do you." }
+  },
+  {
+    "id": "teen-sport",
+    "prompt": "The coach offers you a place on the team. You like playing, but training would take up Saturdays and you're unsure about the commitment.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Join", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "Muddy Saturdays, sore legs, and a team that's got your back." },
+    "rightCard": { "label": "Say no", "effect": { "energy": 10, "health": -5 }, "outcome": "You keep your Saturdays and spend them on the sofa." }
+  }
+]

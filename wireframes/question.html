@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframe – Question</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <span class="wireframe-label">Wireframe 1 · Question</span>
+
+  <main class="screen">
+    <!-- Path so far: each entry is the chosen option's short label -->
+    <aside class="path panel" aria-label="Your path">
+      <h2 class="panel-title">Your path</h2>
+      <ol class="path-list">
+        <li class="path-item">
+          <span class="path-num">Q1</span>
+          <span class="path-badge b">B</span>
+          <span class="path-text">Took the job</span>
+        </li>
+        <li class="path-item">
+          <span class="path-num">Q2</span>
+          <span class="path-badge a">A</span>
+          <span class="path-text">Skipped breakfast</span>
+        </li>
+        <li class="path-item current">
+          <span class="path-num">Q3</span>
+          <span class="path-badge pending">?</span>
+          <span class="path-text">Deciding…</span>
+        </li>
+      </ol>
+    </aside>
+
+    <section class="question">
+      <h2 class="panel-title">Question</h2>
+      <p class="question-text">
+        Your friend invites you to a party the night before a big exam.
+        Do you go out or stay in and study?
+      </p>
+      <p class="question-meta">Question 3 of ?</p>
+    </section>
+
+    <aside class="stats panel" aria-label="Stats">
+      <h2 class="panel-title">Stats</h2>
+      <div id="stats" class="stat-list"></div>
+      <p class="stats-hint">Hover over an option to preview its effect.</p>
+    </aside>
+
+    <!-- data-short is the simplified label shown in the path once chosen -->
+    <section class="choices">
+      <button class="choice choice-a" data-short="Went to the party"
+        data-effects='{"Happiness": 15, "Social": 20, "Energy": -20, "Intelligence": -10}'>
+        <span class="choice-key">Option A</span>
+        <span class="choice-text">Go to the party</span>
+      </button>
+      <button class="choice choice-b" data-short="Stayed in to study"
+        data-effects='{"Intelligence": 15, "Social": -10, "Happiness": -5, "Health": 5}'>
+        <span class="choice-key">Option B</span>
+        <span class="choice-text">Stay in and study</span>
+      </button>
+    </section>
+  </main>
+
+  <script src="stats.js"></script>
+  <script>
+    const values = { Health: 70, Wealth: 45, Energy: 60, Happiness: 55, Social: 40, Intelligence: 65 };
+    const el = document.getElementById("stats");
+    renderStats(el, values);
+    bindPreview(el, values);
+  </script>
+</body>
+</html>
