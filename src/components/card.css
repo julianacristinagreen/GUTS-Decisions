@@ -1,0 +1,25 @@
+.card-h1 {
+    color: grey; 
+    justify-content: start;
+    align-content: start;
+    display: grid;
+    padding-left: 2%;
+}
+
+.card-div {
+    background-color: rgb(145, 217, 219);
+    min-height: 50%;
+    border-radius: 20px;
+    justify-content: start;
+    align-content: start;
+    display: grid;
+}
+
+.card-p{
+    color: rgb(92, 92, 92);
+    align-content: center;
+    justify-content: left;
+    display: grid;
+    width: max-content;
+    padding-left: 2%;
+}
