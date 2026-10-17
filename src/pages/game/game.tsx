@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Stats from "../../components/stats/stats";
 import Card from "../../components/card/card";
+import { Banner } from "../../components/banner/banner";
 import { ChoiceButton } from "../../components/buttons/buttons";
 import { choose } from "../../engine/engine";
 import type { GameState } from "../../engine/types";
@@ -28,6 +29,8 @@ export default function Game() {
 
     return (
         <>
+        <Banner game={game}/>
+
         <Stats stats={game.stats} previewEffect={effect ?? null}/>
 
             {question ? (

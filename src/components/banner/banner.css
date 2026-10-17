@@ -1,0 +1,23 @@
+.banner{    
+    width:100%;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    max-height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+h1.welcome-title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+}
+
+.welcome-title .welcome-accent {
+  color: #0088b0;
+}
