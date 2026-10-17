@@ -33,5 +33,33 @@
     "minAge": 55, "maxAge": 60,
     "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 5, "energy": -5 }, "outcome": "Everyone's older. Everyone's exactly the same." },
     "rightCard": { "label": "Skip it", "effect": { "energy": 5, "social": -5 }, "outcome": "You see the photos later. Mr. Henderson's house is still there." }
+  },
+  {
+    "id": "old-downsize",
+    "prompt": "The kids have moved out and the house feels too big.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Downsize", "effect": { "wealth": 20, "happiness": -5 }, "outcome": "A smaller place and a bigger bank balance. You miss the garden." },
+    "rightCard": { "label": "Stay", "effect": { "happiness": 5, "wealth": -5 }, "outcome": "Every room is full of memories, and dust." }
+  },
+  {
+    "id": "old-video-calls",
+    "prompt": "Your grandkid offers to teach you how to do video calls.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Learn", "effect": { "social": 10, "energy": -5 }, "outcome": "You spend the first call looking at your own forehead. Then you get it." },
+    "rightCard": { "label": "Too fiddly", "effect": { "social": -10, "energy": 5 }, "outcome": "You stick to phone calls. They ring less often." }
+  },
+  {
+    "id": "old-pottery",
+    "prompt": "The community centre runs a pottery class on Tuesdays.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Join", "effect": { "happiness": 10, "social": 10, "wealth": -5 }, "outcome": "Your first bowl is wonky. Your friends there are not." },
+    "rightCard": { "label": "Stay in", "effect": { "energy": 5, "social": -5 }, "outcome": "Tuesday nights stay quiet." }
+  },
+  {
+    "id": "old-world-trip",
+    "prompt": "You could spend your savings on a trip around the world.",
+    "minAge": 52, "maxAge": 60,
+    "leftCard":  { "label": "Go", "effect": { "happiness": 20, "wealth": -20, "energy": -10 }, "outcome": "Temples, deserts, and a sunburn you'll talk about forever." },
+    "rightCard": { "label": "Save it", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "The money's safe. The brochures stay on the coffee table." }
   }
 ]

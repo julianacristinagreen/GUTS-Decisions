@@ -33,5 +33,33 @@
     "minAge": 38, "maxAge": 49,
     "leftCard":  { "label": "Take the time", "effect": { "health": 15, "energy": 20, "wealth": -10 }, "outcome": "Two weeks of nothing. You remember who you are." },
     "rightCard": { "label": "Push through", "effect": { "wealth": 10, "health": -15, "energy": -10 }, "outcome": "You hit your targets. Your hands won't stop shaking." }
+  },
+  {
+    "id": "adult-sports-car",
+    "prompt": "You catch yourself looking at sports cars online.",
+    "minAge": 40, "maxAge": 49,
+    "leftCard":  { "label": "Buy one", "effect": { "happiness": 15, "wealth": -20 }, "outcome": "It's impractical and loud, and you grin every time you start it." },
+    "rightCard": { "label": "Get a grip", "effect": { "wealth": 5, "happiness": -5 }, "outcome": "You buy a sensible hatchback. It's very reliable." }
+  },
+  {
+    "id": "adult-parent-care",
+    "prompt": "Your mum needs more help since her fall.",
+    "minAge": 40, "maxAge": 49,
+    "leftCard":  { "label": "Move her in", "effect": { "social": 10, "energy": -15, "happiness": 5 }, "outcome": "It's crowded and hard, and you wouldn't change it." },
+    "rightCard": { "label": "Find a care home", "effect": { "wealth": -15, "happiness": -5 }, "outcome": "She's well looked after. You visit on Sundays." }
+  },
+  {
+    "id": "adult-career-change",
+    "prompt": "You've always wanted to be a teacher. You'd have to retrain.",
+    "minAge": 36, "maxAge": 45,
+    "leftCard":  { "label": "Retrain", "effect": { "happiness": 15, "wealth": -15, "energy": -10 }, "outcome": "A classroom of thirty teenagers. You've found your thing." },
+    "rightCard": { "label": "Stay put", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "You're good at your job. You just don't love it." }
+  },
+  {
+    "id": "adult-drinking",
+    "prompt": "Your doctor says you should cut back on the drinking.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Go sober", "effect": { "health": 15, "social": -10 }, "outcome": "You sleep better. The pub quiz team misses you." },
+    "rightCard": { "label": "One glass is fine", "effect": { "health": -10, "happiness": 5 }, "outcome": "It's never one glass." }
   }
 ]
