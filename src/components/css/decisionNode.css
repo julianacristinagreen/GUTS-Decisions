@@ -1,0 +1,15 @@
+.decision-div {
+    background-color: rgb(120, 146, 161);
+    border-radius: 10px;
+}
+
+.decision-p {
+    padding: 2%;
+}
+
+.option {
+    background-color: rgb(157, 157, 189);
+    padding: 8px;
+    max-width: 30%;
+    border-radius: 20px;
+}
