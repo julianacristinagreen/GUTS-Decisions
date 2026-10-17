@@ -1,5 +1,5 @@
 import { newGame } from "../../engine/engine";
-export {rngFor} from "../../engine/rng";
+import { randomSeed } from "../../engine/rng";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LifeTree } from "../../components/life-tree/lifeTree";
@@ -9,7 +9,7 @@ export default function WelcomePage(){
     const navigate = useNavigate();
     const [treeKey, setTreeKey] = useState(0);
     function startGame() {
-        const game = newGame("42");
+        const game = newGame(randomSeed());
         navigate("/game", {
             state: { game }
         });
