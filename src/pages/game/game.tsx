@@ -1,26 +1,25 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Stats from "../../components/stats/stats";
 import Card from "../../components/card/card";
 import { ChoiceButton } from "../../components/buttons/buttons";
 import { choose } from "../../engine/engine";
 import type { GameState } from "../../engine/types";
-import { useNavigate } from "react-router-dom";
 
 export default function Game() {
     const location = useLocation();
     const navigate = useNavigate();
     const [game, setGame] = useState<GameState | null>(location.state?.game ?? null);
 
+    useEffect(() => {
+        if (game && !game.alive) {
+            navigate("/death", { state: { game } });
+        }
+    }, [game, navigate]);
+
     if (!game) {
         return <p>No game found. Please start a new game.</p>;
     }
-
-    useEffect(() => {
-        if (!game.alive) {
-            navigate("/death", {state: { game } });
-        }
-    });
 
     const question = game.currentDecision;
     const makeChoice = (pick: "left" | "right") => {
