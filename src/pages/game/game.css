@@ -1,3 +1,11 @@
 #game {
     margin: 20px;
 }
+
+.choices {
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    display: flex;
+    margin-top: 50px;
+}
