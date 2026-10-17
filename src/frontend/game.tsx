@@ -14,15 +14,13 @@ export default function Game() {
         firstDecision = false;
     }
 
-    console.log(question.prompt);
-
     if (!game) {
         return <p>No game found. Please start a new game.</p>;
     }
 
     return (
         <>
-        <Stats/>
+        <Stats stats={game.stats}/>
 
         <Card question={question}/>
         </>
