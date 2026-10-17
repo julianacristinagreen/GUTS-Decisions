@@ -16,14 +16,14 @@ export default function Game() {
 
     const question = game.currentDecision;
 
-    function makeChoice(pick: "left" | "right") {
+    const makeChoice = (pick: "left" | "right") => {
         const nextGame = choose(game, pick);
         setGame(nextGame);
     }
 
     return (
         <>
-            <Stats />
+        <Stats stats={game.stats}/>
 
             {question ? (
                 <>
