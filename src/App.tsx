@@ -5,7 +5,7 @@ import WelcomePage from "./pages/welcome/welcome";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/game" element={<Game />} />
