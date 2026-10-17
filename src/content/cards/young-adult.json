@@ -1,140 +1,140 @@
 [
   {
     "id": "ya-university",
-    "prompt": "You've got a university offer, and a mate's offering you a job at his dad's garage.",
+    "prompt": "You have a university offer and a chance to work at your friend's family garage. One asks you to invest in a future you can't see yet; the other pays now.",
     "minAge": 18, "maxAge": 19,
     "leftCard":  { "label": "University", "effect": { "wealth": -15, "social": 10, "happiness": 5 }, "outcome": "Three years, a lot of debt, and friends you'll keep for life." },
     "rightCard": { "label": "The garage", "effect": { "wealth": 15, "social": -5 }, "outcome": "You're earning while your friends are borrowing. You miss them sometimes." }
   },
   {
     "id": "ya-gap-year",
-    "prompt": "Your friend is backpacking around South America for six months and wants you to come.",
+    "prompt": "A close friend wants you to join a six-month trip. You could afford it, but it would use savings you'd planned to keep for what comes next.",
     "minAge": 19, "maxAge": 25,
     "leftCard":  { "label": "Book the flight", "effect": { "happiness": 15, "wealth": -15, "energy": -5 }, "outcome": "You come back broke, tanned and full of stories nobody asked for." },
     "rightCard": { "label": "Stay put", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "You follow the trip on Instagram from your desk." }
   },
   {
     "id": "ya-gym",
-    "prompt": "A gym opens on your street with a January deal.",
+    "prompt": "You want to feel fitter, and a nearby gym is offering a discounted membership. You've paid for good intentions before; your routine is already full.",
     "minAge": 18, "maxAge": 35,
     "leftCard":  { "label": "Sign up", "effect": { "health": 15, "wealth": -5, "energy": -5 }, "outcome": "You actually keep going. Even you're surprised." },
     "rightCard": { "label": "Not for me", "effect": { "energy": 5, "health": -5 }, "outcome": "You walk past it every day on the way to the takeaway." }
   },
   {
     "id": "ya-job-offer",
-    "prompt": "A start-up offers you a job: half the salary of your current one, plus shares.",
+    "prompt": "A start-up offers work you care about, but half your current salary and shares whose value is uncertain. The hours may be longer, too.",
     "minAge": 22, "maxAge": 32,
     "leftCard":  { "label": "Take the risk", "effect": { "wealth": -10, "happiness": 10, "energy": -15 }, "outcome": "Long nights, free pizza, and a job you actually care about." },
     "rightCard": { "label": "Play it safe", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "The pay is steady. Every day feels much the same." }
   },
   {
     "id": "ya-move-in",
-    "prompt": "Your partner asks if you want to move in together.",
+    "prompt": "Your partner wants to move in together. Sharing rent would help, but it would also make the relationship—and your home—harder to separate.",
     "minAge": 23, "maxAge": 35,
     "leftCard":  { "label": "Yes", "effect": { "social": 10, "happiness": 10, "wealth": 5 }, "outcome": "You split the rent, and argue about the thermostat." },
     "rightCard": { "label": "Not yet", "effect": { "social": -15, "happiness": -5 }, "outcome": "It goes quiet. A month later, they've moved on." }
   },
   {
     "id": "ya-night-out",
-    "prompt": "It's Friday, you're exhausted, and the group chat is going out.",
+    "prompt": "It's Friday and you're exhausted. Your friends are going out, and you've missed the last few times; tomorrow is the only day you can catch up on rest.",
     "minAge": 18, "maxAge": 30,
     "leftCard":  { "label": "Go out", "effect": { "social": 10, "energy": -15, "health": -5 }, "outcome": "Brilliant night. Sunday comes and you're still recovering." },
     "rightCard": { "label": "Early night", "effect": { "energy": 15, "social": -5 }, "outcome": "Ten hours of sleep. You've never felt more alive." }
   },
   {
     "id": "ya-first-flat",
-    "prompt": "Your friends are getting a flat together and have a room spare.",
+    "prompt": "Your friends have a room in a shared flat. Moving out would mean more independence and rent; staying home would help you save and keep familiar routines.",
     "minAge": 18, "maxAge": 22,
     "leftCard":  { "label": "Move in", "effect": { "social": 15, "wealth": -10, "energy": -5 }, "outcome": "Nobody ever washes up. It's the best year of your life." },
     "rightCard": { "label": "Stay at home", "effect": { "wealth": 15, "social": -10 }, "outcome": "You save a fortune. Your mum still does your washing." }
   },
   {
     "id": "ya-credit-card",
-    "prompt": "Your bank offers you a credit card with a £3,000 limit.",
+    "prompt": "The bank offers you a credit card with a £3,000 limit. It could help with planned expenses, but it's easy to spend money you haven't earned yet.",
     "minAge": 18, "maxAge": 24,
     "leftCard":  { "label": "Take it", "effect": { "happiness": 10, "wealth": -15 }, "outcome": "You treat yourself, a lot. The statements are frightening." },
     "rightCard": { "label": "Cut it up", "effect": { "wealth": 5, "happiness": -5 }, "outcome": "You stay out of debt and stay in on Friday nights." }
   },
   {
     "id": "ya-tattoo",
-    "prompt": "Your mate's getting a tattoo and there's a spare slot.",
+    "prompt": "Your friend is getting a tattoo and invites you to join. You like the design, but you're not sure you'd choose it without the occasion.",
     "minAge": 18, "maxAge": 30,
     "leftCard":  { "label": "Get one", "effect": { "happiness": 10, "wealth": -5 }, "outcome": "You love it. Your gran pretends she hasn't seen it." },
     "rightCard": { "label": "Hold their hand", "effect": { "social": 5 }, "outcome": "They squeeze your hand so hard you nearly need a plaster." }
   },
   {
     "id": "ya-side-hustle",
-    "prompt": "You could start selling things online in the evenings.",
+    "prompt": "Selling things online might bring in extra money. It would take the evenings you use to rest, and there's no guarantee it will pay off.",
     "minAge": 20, "maxAge": 30,
     "leftCard":  { "label": "Start it", "effect": { "wealth": 15, "energy": -15 }, "outcome": "Your living room fills with boxes, and your account fills up too." },
     "rightCard": { "label": "Rest", "effect": { "energy": 10 }, "outcome": "Your evenings stay yours." }
   },
   {
     "id": "ya-breakup",
-    "prompt": "Your relationship isn't working any more, but it's comfortable.",
+    "prompt": "You still care about each other, but the same problems keep returning. Staying feels familiar; leaving means accepting an uncertain next chapter.",
     "minAge": 20, "maxAge": 30,
     "leftCard":  { "label": "End it", "effect": { "happiness": -10, "energy": 10 }, "outcome": "It hurts for months. Then one morning you feel lighter." },
     "rightCard": { "label": "Stay", "effect": { "social": 5, "happiness": -10 }, "outcome": "Nothing's wrong, exactly. Nothing's right either." }
   },
   {
     "id": "ya-wedding-abroad",
-    "prompt": "Your best friend asks you to be in their wedding party in Spain.",
+    "prompt": "Your closest friend asks you to be in their wedding party abroad. Being there matters to you, but the travel and costs would strain your budget.",
     "minAge": 25, "maxAge": 35,
     "leftCard":  { "label": "Go", "effect": { "social": 15, "wealth": -15, "happiness": 5 }, "outcome": "You give a speech that makes everyone cry, in a good way." },
     "rightCard": { "label": "Can't afford it", "effect": { "wealth": 5, "social": -15 }, "outcome": "You watch the livestream. They mention you in the speech." }
   },
   {
     "id": "ya-dog",
-    "prompt": "The rescue centre has a dog with very sad eyes.",
+    "prompt": "A rescue dog needs a home. You want to help, but adoption means years of daily care, time, and costs—not just the first happy week.",
     "minAge": 22, "maxAge": 35,
     "leftCard":  { "label": "Adopt him", "effect": { "happiness": 15, "wealth": -10, "health": 5 }, "outcome": "He chews your shoes and walks you twice a day." },
     "rightCard": { "label": "Not now", "effect": { "wealth": 5, "happiness": -5 }, "outcome": "You think about those eyes for a week." }
   },
   {
     "id": "ya-masters",
-    "prompt": "You could go back to university for a master's degree.",
+    "prompt": "A master's could open new doors, but it would cost money and time away from work. You're unsure whether you want the qualification or a different life.",
     "minAge": 21, "maxAge": 28,
     "leftCard":  { "label": "Enrol", "effect": { "wealth": -15, "energy": -10, "happiness": 10 }, "outcome": "A year of libraries and instant noodles. You love it." },
     "rightCard": { "label": "Keep working", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "Your salary goes up. So does the feeling you're missing something." }
   },
   {
     "id": "ya-city-move",
-    "prompt": "You're offered a job in London. It pays more, but everyone you know is here.",
+    "prompt": "A job in London would pay more and bring a fresh start. Your friends and family are here, and building a new support network could take time.",
     "minAge": 22, "maxAge": 32,
     "leftCard":  { "label": "Move", "effect": { "wealth": 15, "social": -15, "happiness": 5 }, "outcome": "The city is huge and exciting, and lonely at first." },
     "rightCard": { "label": "Stay", "effect": { "social": 10, "wealth": -5 }, "outcome": "Sunday dinners with your family, every week." }
   },
   {
     "id": "ya-crypto",
-    "prompt": "A friend swears this new coin is going to the moon.",
+    "prompt": "A friend is excited about a new cryptocurrency. The money you're considering is also your emergency savings, and neither of you knows what it will be worth.",
     "minAge": 20, "maxAge": 30,
     "leftCard":  { "label": "Invest your savings", "effect": { "wealth": -20, "happiness": -5 }, "outcome": "It does not go to the moon." },
     "rightCard": { "label": "Leave it in the bank", "effect": { "wealth": 5 }, "outcome": "Your friend stops talking about it after a month." }
   },
   {
     "id": "ya-baby",
-    "prompt": "You and your partner start talking about having a baby.",
+    "prompt": "You and your partner are considering having a child. You can imagine a life with one, but neither of you can know how ready you'll feel or what you'll give up.",
     "minAge": 27, "maxAge": 35,
     "leftCard":  { "label": "Let's do it", "effect": { "happiness": 15, "energy": -20, "wealth": -10 }, "outcome": "You haven't slept in a year. You've never been happier." },
     "rightCard": { "label": "Not yet", "effect": { "energy": 10, "wealth": 5, "happiness": -5 }, "outcome": "You book a holiday instead. The question doesn't go away." }
   },
   {
     "id": "ya-binge",
-    "prompt": "It's 2am and you're three episodes into a new series.",
+    "prompt": "It's 2 a.m. and you're three episodes into a series. The next one starts automatically; tomorrow morning still starts at the usual time.",
     "minAge": 18, "maxAge": 35,
     "leftCard":  { "label": "One more", "effect": { "happiness": 5, "energy": -10, "health": -5 }, "outcome": "It's six episodes later and the birds are singing." },
     "rightCard": { "label": "Go to bed", "effect": { "energy": 10 }, "outcome": "You wake up fresh. The cliffhanger can wait." }
   },
   {
     "id": "ya-volunteer",
-    "prompt": "The local food bank needs volunteers on Saturdays.",
+    "prompt": "The local food bank needs regular Saturday volunteers. You want to help, but your weekends are already the time you use to recover and see people.",
     "minAge": 20, "maxAge": 35,
     "leftCard":  { "label": "Sign up", "effect": { "social": 10, "happiness": 10, "energy": -10 }, "outcome": "You meet the kindest people in town." },
     "rightCard": { "label": "Not this year", "effect": { "energy": 5, "happiness": -5 }, "outcome": "You donate a few tins instead." }
   },
   {
     "id": "ya-boss",
-    "prompt": "Your boss takes credit for your work in a meeting.",
+    "prompt": "In a meeting, your manager presents your work as theirs. You could correct the record now, but they influence your next review and future projects.",
     "minAge": 22, "maxAge": 35,
     "leftCard":  { "label": "Call it out", "effect": { "happiness": 10, "wealth": -10 }, "outcome": "The room goes silent. Your next review is frosty." },
     "rightCard": { "label": "Say nothing", "effect": { "happiness": -10, "wealth": 5 }, "outcome": "They get the praise. You get the next project too." }

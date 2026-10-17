@@ -1,63 +1,63 @@
 [
   {
     "id": "adult-promotion",
-    "prompt": "You're offered a promotion. It means more money and much longer hours.",
+    "prompt": "A promotion would bring more money and responsibility, but longer hours. You value the opportunity and the life you've built outside work.",
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Accept", "effect": { "wealth": 20, "energy": -15, "social": -5 }, "outcome": "Bigger office, bigger salary. You see your friends less." },
     "rightCard": { "label": "Decline", "effect": { "happiness": 5, "wealth": -5 }, "outcome": "You stay where you are, and you're home for dinner every night." }
   },
   {
     "id": "adult-house",
-    "prompt": "You've found a house you love. It's at the very top of your budget.",
+    "prompt": "You've found a home that feels right, but the mortgage would leave little room for surprises. Renting keeps you flexible, though the rent keeps rising.",
     "minAge": 36, "maxAge": 45,
     "leftCard":  { "label": "Buy it", "effect": { "wealth": -20, "happiness": 15 }, "outcome": "The mortgage is terrifying. The garden is perfect." },
     "rightCard": { "label": "Keep renting", "effect": { "wealth": 10, "happiness": -5 }, "outcome": "Your landlord still won't fix the boiler." }
   },
   {
     "id": "adult-marathon",
-    "prompt": "A friend signs you both up for a marathon, six months from now.",
+    "prompt": "A friend invites you to train for a marathon together. The goal excites you, but six months of training would claim time and energy you already use elsewhere.",
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Train for it", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "You finish, limping, in four hours fifty. You cry at the finish line." },
     "rightCard": { "label": "Back out", "effect": { "social": -10, "energy": 5 }, "outcome": "You cheer them on from mile 20 with a bacon sandwich." }
   },
   {
     "id": "adult-old-friend",
-    "prompt": "An old school friend messages out of the blue. They're in town this weekend.",
+    "prompt": "An old school friend is in town this weekend. You remember good times, but you've both changed, and reconnecting takes effort you may not have right now.",
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Meet up", "effect": { "social": 15, "happiness": 10, "energy": -5 }, "outcome": "Within ten minutes it's like you never left school." },
     "rightCard": { "label": "Leave it on read", "effect": { "energy": 5, "social": -10 }, "outcome": "You meant to reply. A year goes by." }
   },
   {
     "id": "adult-burnout",
-    "prompt": "Your doctor says you're burning out and should take some time off.",
+    "prompt": "Your doctor is concerned about your stress and recommends time off. Work is demanding, and stepping away could help—but you worry about the consequences of being absent.",
     "minAge": 38, "maxAge": 49,
     "leftCard":  { "label": "Take the time", "effect": { "health": 15, "energy": 20, "wealth": -10 }, "outcome": "Two weeks of nothing. You remember who you are." },
     "rightCard": { "label": "Push through", "effect": { "wealth": 10, "health": -15, "energy": -10 }, "outcome": "You hit your targets. Your hands won't stop shaking." }
   },
   {
     "id": "adult-sports-car",
-    "prompt": "You catch yourself looking at sports cars online.",
+    "prompt": "You keep returning to the sports car listings. Buying one would use savings you worked hard to build, but wanting it isn't only about practicality.",
     "minAge": 40, "maxAge": 49,
     "leftCard":  { "label": "Buy one", "effect": { "happiness": 15, "wealth": -20 }, "outcome": "It's impractical and loud, and you grin every time you start it." },
     "rightCard": { "label": "Get a grip", "effect": { "wealth": 5, "happiness": -5 }, "outcome": "You buy a sensible hatchback. It's very reliable." }
   },
   {
     "id": "adult-parent-care",
-    "prompt": "Your mum needs more help since her fall.",
+    "prompt": "Since her fall, your mum needs daily help and wants to remain independent. Your work and home can't easily absorb everything she needs; the family must decide what care can look like.",
     "minAge": 40, "maxAge": 49,
     "leftCard":  { "label": "Move her in", "effect": { "social": 10, "energy": -15, "happiness": 5 }, "outcome": "It's crowded and hard, and you wouldn't change it." },
     "rightCard": { "label": "Find a care home", "effect": { "wealth": -15, "happiness": -5 }, "outcome": "She's well looked after. You visit on Sundays." }
   },
   {
     "id": "adult-career-change",
-    "prompt": "You've always wanted to be a teacher. You'd have to retrain.",
+    "prompt": "Teaching has stayed with you as a possibility. Retraining would mean lower income and years of effort, while staying offers security but may leave the question unanswered.",
     "minAge": 36, "maxAge": 45,
     "leftCard":  { "label": "Retrain", "effect": { "happiness": 15, "wealth": -15, "energy": -10 }, "outcome": "A classroom of thirty teenagers. You've found your thing." },
     "rightCard": { "label": "Stay put", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "You're good at your job. You just don't love it." }
   },
   {
     "id": "adult-drinking",
-    "prompt": "Your doctor says you should cut back on the drinking.",
+    "prompt": "At a check-up, your doctor suggests cutting back on alcohol. Drinking is part of how you unwind and socialise, but you've started wondering what it costs you.",
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Go sober", "effect": { "health": 15, "social": -10 }, "outcome": "You sleep better. The pub quiz team misses you." },
     "rightCard": { "label": "One glass is fine", "effect": { "health": -10, "happiness": 5 }, "outcome": "It's never one glass." }

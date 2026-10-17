@@ -1,63 +1,63 @@
 [
   {
     "id": "old-early-retirement",
-    "prompt": "Your company offers you early retirement on a decent package.",
+    "prompt": "Your company offers an early-retirement package. It would give you time now, but you'd need to make your savings last and decide what work has meant to you.",
     "minAge": 50, "maxAge": 58,
     "leftCard":  { "label": "Retire", "effect": { "happiness": 15, "energy": 15, "wealth": -10 }, "outcome": "You wake up on a Monday with nowhere to be. It takes some getting used to." },
     "rightCard": { "label": "Keep working", "effect": { "wealth": 15, "energy": -10 }, "outcome": "The money keeps coming in. You keep thinking about what you'd do with the time." }
   },
   {
     "id": "old-health-check",
-    "prompt": "A letter invites you for a free health check. You feel fine.",
+    "prompt": "A routine health-screening invitation arrives. You feel well, but screening can bring reassurance, follow-up tests, or uncertainty you hadn't planned for.",
     "minAge": 50, "maxAge": 60,
     "leftCard":  { "label": "Book it", "effect": { "health": 15, "energy": -5 }, "outcome": "They catch something early. The nurse says you were lucky." },
     "rightCard": { "label": "Bin it", "effect": { "health": -15 }, "outcome": "You feel fine. For now." }
   },
   {
     "id": "old-grandkids",
-    "prompt": "Your family asks if you'll look after the grandkids every Wednesday.",
+    "prompt": "Your family asks you to look after the grandchildren every Wednesday. They rely on you, and you love them, but the commitment would reshape your own week.",
     "minAge": 52, "maxAge": 60,
     "leftCard":  { "label": "Of course", "effect": { "social": 15, "happiness": 10, "energy": -15 }, "outcome": "Wednesdays become the best and most exhausting day of the week." },
     "rightCard": { "label": "I need my time", "effect": { "energy": 10, "social": -10 }, "outcome": "You get your Wednesdays back. The house is very quiet." }
   },
   {
     "id": "old-motorbike",
-    "prompt": "You've always wanted a motorbike. You've got the savings now.",
+    "prompt": "You can finally afford the motorbike you've wanted for years. The cost is manageable, but you'd be taking on a new risk and using savings you could keep for later.",
     "minAge": 50, "maxAge": 60,
     "leftCard":  { "label": "Buy it", "effect": { "happiness": 20, "wealth": -15, "health": -10 }, "outcome": "You ride along the coast at sunrise. Your knees hate you." },
     "rightCard": { "label": "Too old for that", "effect": { "wealth": 5, "happiness": -10 }, "outcome": "You still look them up online now and then." }
   },
   {
     "id": "old-reunion",
-    "prompt": "Your 40-year school reunion is coming up.",
+    "prompt": "Your school reunion is coming up. You wonder who you'll be glad to see—and whether returning to that room will feel like reconnecting or revisiting old roles.",
     "minAge": 55, "maxAge": 60,
     "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 5, "energy": -5 }, "outcome": "Everyone's older. Everyone's exactly the same." },
     "rightCard": { "label": "Skip it", "effect": { "energy": 5, "social": -5 }, "outcome": "You see the photos later. Mr. Henderson's house is still there." }
   },
   {
     "id": "old-downsize",
-    "prompt": "The kids have moved out and the house feels too big.",
+    "prompt": "The children have moved out. The house is expensive to maintain and full of memories; a smaller place could free resources, but leaving would make that change feel real.",
     "minAge": 50, "maxAge": 60,
     "leftCard":  { "label": "Downsize", "effect": { "wealth": 20, "happiness": -5 }, "outcome": "A smaller place and a bigger bank balance. You miss the garden." },
     "rightCard": { "label": "Stay", "effect": { "happiness": 5, "wealth": -5 }, "outcome": "Every room is full of memories, and dust." }
   },
   {
     "id": "old-video-calls",
-    "prompt": "Your grandkid offers to teach you how to do video calls.",
+    "prompt": "A grandchild offers to set up video calls so you can keep in touch from a distance. It could bring you closer, though learning another device feels like work.",
     "minAge": 50, "maxAge": 60,
     "leftCard":  { "label": "Learn", "effect": { "social": 10, "energy": -5 }, "outcome": "You spend the first call looking at your own forehead. Then you get it." },
     "rightCard": { "label": "Too fiddly", "effect": { "social": -10, "energy": 5 }, "outcome": "You stick to phone calls. They ring less often." }
   },
   {
     "id": "old-pottery",
-    "prompt": "The community centre runs a pottery class on Tuesdays.",
+    "prompt": "A pottery class is starting at the community centre. You could try something unfamiliar and meet people, or keep the quiet Tuesday routine you've grown used to.",
     "minAge": 50, "maxAge": 60,
     "leftCard":  { "label": "Join", "effect": { "happiness": 10, "social": 10, "wealth": -5 }, "outcome": "Your first bowl is wonky. Your friends there are not." },
     "rightCard": { "label": "Stay in", "effect": { "energy": 5, "social": -5 }, "outcome": "Tuesday nights stay quiet." }
   },
   {
     "id": "old-world-trip",
-    "prompt": "You could spend your savings on a trip around the world.",
+    "prompt": "You could use a substantial part of your savings for a long trip. The chance may not come again in the same way, but neither will the security that money provides.",
     "minAge": 52, "maxAge": 60,
     "leftCard":  { "label": "Go", "effect": { "happiness": 20, "wealth": -20, "energy": -10 }, "outcome": "Temples, deserts, and a sunburn you'll talk about forever." },
     "rightCard": { "label": "Save it", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "The money's safe. The brochures stay on the coffee table." }
