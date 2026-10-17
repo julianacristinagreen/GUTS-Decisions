@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ChoiceButton } from "../../components/buttons/buttons";
 import { allDecisions } from "../../engine/cards";
-import { decisionsInFullLife, newGame } from "../../engine/engine";
+import { newGame } from "../../engine/engine";
 import { randomSeed } from "../../engine/rng";
 import type { GameState } from "../../engine/types";
 import { allChoices, branchesFor, lifePath, point, SIZE } from "../../utils/lifeTree";
@@ -35,7 +35,6 @@ export default function DecisionTree() {
     // The node for the current decision on the overview
     const here = point(step === 0 ? steps : step - 1, branches[step === 0 ? steps : step - 1], steps);
 
-    const wholeLife = decisionsInFullLife();
     const entry = step > 0 ? game.history[step - 1] : null;
     const decision = entry ? allDecisions.find((d) => d.id === entry.decisionId) : null;
 
@@ -53,8 +52,7 @@ export default function DecisionTree() {
                 {step === 0 ? (
                     <p className="reveal-number">
                         You made <b>{steps}</b> choices. There were {(2 ** steps).toLocaleString()} ways those
-                        years could have gone, and {(2 ** wholeLife).toLocaleString()} ways a whole life could.
-                        The power of two buttons...
+                        years could have gone. The power of two buttons...
                     </p>
                 ) : (
                     <>
