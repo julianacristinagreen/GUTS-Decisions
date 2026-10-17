@@ -1,0 +1,4 @@
+/* Styles shared by every page. Page-specific styles live next to their page or component. */
+body {
+  margin: 0;
+}
