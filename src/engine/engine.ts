@@ -23,6 +23,7 @@ export const newGame: NewGame = (seed) => ({
     alive: true,
     currentDecision: generateDecision(seed, 0, []),
     history: [],
+    causeOfDeath: null,
 });
 
 export const choose: Choose = (state, pick) => {
@@ -44,7 +45,7 @@ export const choose: Choose = (state, pick) => {
 
     const statHitZero = Object.values(stats).some(v => v === 0);
     if (statHitZero) {
-        return { ...state, stats, history, alive: false, currentDecision: null };
+        return { ...state, stats, history, alive: false, currentDecision: null, causeOfDeath: stats};
     }
 
     // Skip forward a year at a time until a card matches or the life runs out
@@ -52,6 +53,11 @@ export const choose: Choose = (state, pick) => {
     let nextDecision = generateDecision(state.seed, age, history);
     while (!nextDecision && age < MAX_AGE) {
         age++;
+
+        if (age >= 60) {
+            return { ...state, stats, history, alive: false, currentDecision: null, causeOfDeath: "old-age"};
+        }
+        
         nextDecision = generateDecision(state.seed, age, history);
     }
 
