@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Stats from "../../components/stats/stats";
 import Card from "../../components/card/card";
+import { OutcomePopup } from "../../components/popup/popup";
 import { Banner } from "../../components/banner/banner";
 import { ChoiceButton } from "../../components/buttons/buttons";
 import { choose } from "../../engine/engine";
@@ -12,6 +13,9 @@ export default function Game() {
     const location = useLocation();
     const navigate = useNavigate();
     const [game, setGame] = useState<GameState | null>(location.state?.game ?? null);
+    const [outcome, setOutcome] = useState("");
+    const [pendingGame, setPendingGame] = useState<GameState | null>(null);
+    const [hovered, setHovered] = useState<"left" | "right" | null>(null);
 
     useEffect(() => {
         if (game && !game.alive) {
@@ -25,11 +29,15 @@ export default function Game() {
 
     const question = game.currentDecision;
     const makeChoice = (pick: "left" | "right") => {
-        const nextGame = choose(game, pick);
-        setGame(nextGame);
+        if (pendingGame) return;
+        setOutcome(pick === "left" ? question!.leftCard.outcome : question!.rightCard.outcome);
+        setPendingGame(choose(game, pick));
     }
 
-    const [hovered, setHovered] = useState<"left" | "right" | null>(null);
+    const finishOutcome = () => {
+        setGame(pendingGame);
+        setPendingGame(null);
+    }
 
     const effect = hovered === "left" ? question?.leftCard.effect : hovered === "right" ? question?.rightCard.effect :null;
 
@@ -63,6 +71,13 @@ export default function Game() {
                 </>
             ) : (
                 <p>{game.alive ? "There are no more decisions." : "Game over."}</p>
+            )}
+
+            { pendingGame && (
+                <OutcomePopup
+                    outcome={outcome}
+                    onFinished={finishOutcome}
+                />
             )}
         </>
     );
