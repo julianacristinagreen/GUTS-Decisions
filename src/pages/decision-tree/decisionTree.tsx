@@ -9,7 +9,7 @@ import { allChoices, branchesFor, lifePath, point, SIZE } from "../../utils/life
 import "./decisionTree.css";
 
 // 2^30 branches can't be drawn, so only the first few levels of are shown
-const SHOWN_LEVELS = 9;
+const SHOWN_LEVELS = 15;
 
 export default function DecisionTree() {
     const location = useLocation();

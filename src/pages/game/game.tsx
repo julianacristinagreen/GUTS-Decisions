@@ -32,23 +32,32 @@ export default function Game() {
     }
   }, [game, navigate]);
 
-  if (!game) {
-    return <p>No game found. Please start a new game.</p>;
-  }
+    const question = game?.currentDecision;
+    const makeChoice = (pick: "left" | "right") => {
+        if (!game || pendingGame) return;
+        setOutcome(pick === "left" ? question!.leftCard.outcome : question!.rightCard.outcome);
+        setPendingGame(choose(game, pick));
+    }
 
-  const question = game.currentDecision;
+    useEffect(() => {
+        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university";
+        if (!question || pendingGame || isMinigame || showMasher || showDice) return;
 
-  const makeChoice = (pick: "left" | "right") => {
-    if (pendingGame) return;
+        const handleKeyPress = (event: KeyboardEvent) => {
+            if (event.key === "ArrowLeft") {
+                makeChoice("left");
+            } else if (event.key === "ArrowRight") {
+                makeChoice("right");
+            }
+        }
 
-    setOutcome(
-      pick === "left"
-        ? question!.leftCard.outcome
-        : question!.rightCard.outcome
-    );
+        window.addEventListener("keydown", handleKeyPress);
+        return () => window.removeEventListener("keydown", handleKeyPress);
+    }, [question, pendingGame, showMasher, showDice, game]);
 
-    setPendingGame(choose(game, pick));
-  };
+    if (!game) {
+        return <p>No game found. Please start a new game.</p>;
+    }
 
   const finishOutcome = () => {
     setGame(pendingGame);
