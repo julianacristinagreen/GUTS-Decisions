@@ -10,12 +10,12 @@ export function Banner({game}: BannerProps) {
     const currentDecisionsMade = game.history.length;
     return (
         <div className="banner">
-            <h1 className="welcome-title">
-                GUT<span className="welcome-accent">(S)</span> Decisions
+            <h1 className="banner-title">
+                GUT<span className="banner-accent">(S)</span> Decisions
             </h1>
-            <div className="info">
-                <p> You are <span style={{ color: "#DAB1DA" }}>{age}</span> year(s) old</p>
-                <p>You have made  <span style={{ color: "#DAB1DA" }}>{currentDecisionsMade}</span> decisions</p>
+            <div className="banner-text">
+                <p>You are <span className="banner-number">{age}</span> {age == 1 ? 'year' : 'years'} old</p>
+                <p>You have made  <span className="banner-number">{currentDecisionsMade}</span> {currentDecisionsMade == 1 ? 'decision' : 'decisions'}</p>
             </div>
         </div>
 

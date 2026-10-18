@@ -39,12 +39,13 @@ export default function Game() {
         <>
         <Banner game={game}/>
 
-        <Stats stats={game.stats} previewEffect={effect ?? null}/>
+        <div className="game-row">
+            {question && <Card question={question} />}
+            <Stats stats={game.stats} previewEffect={effect ?? null}/>
+        </div>
 
             {question ? (
                 <>
-                    <Card question={question} />
-
                     <div className="choices">
                         {question.id === "teen-sport" ? (
                         <button onClick={() => setShowMasher(true)}>

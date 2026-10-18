@@ -138,5 +138,68 @@
     "minAge": 22, "maxAge": 35,
     "leftCard":  { "label": "Call it out", "effect": { "happiness": 10, "wealth": -10 }, "outcome": "The room goes silent. Your next review is frosty." },
     "rightCard": { "label": "Say nothing", "effect": { "happiness": -10, "wealth": 5 }, "outcome": "They get the praise. You get the next project too." }
+  },
+  {
+    "id": "ya-soaking-pan",
+    "prompt": "Your flatmate's pan has been \"soaking\" for nine days. It has started to develop a personality.",
+    "minAge": 18, "maxAge": 25,
+    "leftCard":  { "label": "Leave a note", "effect": { "happiness": 5, "social": -10 }, "outcome": "You get a note back. Then another. The war is fought entirely in Post-its." },
+    "rightCard": { "label": "Wash it yourself", "effect": { "energy": -5, "happiness": -5 }, "outcome": "They never notice. You never forget." }
+  },
+  {
+    "id": "ya-gp-phone",
+    "prompt": "Something hurts. Your GP only books appointments by phone, from 8:00 to 8:01, and you'd rather die than make a phone call.",
+    "minAge": 18, "maxAge": 30,
+    "leftCard":  { "label": "Call", "effect": { "health": 10, "energy": -10 }, "outcome": "You're 47th in the queue. You get an appointment in March." },
+    "rightCard": { "label": "Google it", "effect": { "health": -10, "happiness": -10 }, "outcome": "The internet says it's either a cold or you have three days to live." }
+  },
+  {
+    "id": "ya-first-date",
+    "prompt": "Your date looks nothing like their photos. From their face, they're thinking the same about you.",
+    "minAge": 20, "maxAge": 30,
+    "leftCard":  { "label": "Stay for one drink", "effect": { "social": 10, "happiness": 5 }, "outcome": "One drink becomes five. You end up comparing your worst photos." },
+    "rightCard": { "label": "Fake an emergency", "effect": { "energy": 5, "social": -5 }, "outcome": "Your friend calls right on cue. You're home in time for a pizza." }
+  },
+  {
+    "id": "ya-brown-envelope",
+    "prompt": "A brown envelope from HMRC has been on the doormat for a week. You've started stepping over it.",
+    "minAge": 22, "maxAge": 35,
+    "leftCard":  { "label": "Open it", "effect": { "wealth": 10, "energy": -5 }, "outcome": "It's a tax rebate of £83. You've been scared of free money." },
+    "rightCard": { "label": "Leave it", "effect": { "wealth": -15, "happiness": -5 }, "outcome": "A red envelope joins it. Then another one." }
+  },
+  {
+    "id": "ya-reply-all",
+    "prompt": "You've just hit Reply All on a company-wide email. It was meant for your desk neighbour, and it was about the CEO's tie.",
+    "minAge": 22, "maxAge": 35,
+    "leftCard":  { "label": "Recall the message", "effect": { "happiness": -10, "social": -5 }, "outcome": "Outlook tells 3,000 people you'd like to recall it. Now they're all reading it." },
+    "rightCard": { "label": "Own it", "effect": { "social": 15, "wealth": -10 }, "outcome": "The CEO replies: \"It was a gift from my wife.\" You become an office legend." }
+  },
+  {
+    "id": "ya-group-holiday",
+    "prompt": "You're planning a holiday for eight. Four people have voted, two have left the chat, and one keeps sending links to castles.",
+    "minAge": 20, "maxAge": 30,
+    "leftCard":  { "label": "Take charge", "effect": { "social": 10, "energy": -15, "wealth": -5 }, "outcome": "You book everything. People pay you back over the next six months." },
+    "rightCard": { "label": "Let it die", "effect": { "social": -5, "energy": 5 }, "outcome": "The holiday never happens. The chat gets renamed \"Ibiza next year??\"" }
+  },
+  {
+    "id": "ya-sourdough",
+    "prompt": "Everyone you know has a hobby they post about. You've got a free Saturday and a bag of flour.",
+    "minAge": 22, "maxAge": 35,
+    "leftCard":  { "label": "Make sourdough", "effect": { "happiness": 5, "energy": -10 }, "outcome": "It takes fourteen hours and could be used as a doorstop. You post it anyway." },
+    "rightCard": { "label": "Doomscroll", "effect": { "energy": -5, "happiness": -5 }, "outcome": "You spend six hours watching other people make sourdough." }
+  },
+  {
+    "id": "ya-wedding-season",
+    "prompt": "It's your sixth wedding this summer. You've worn the same outfit to all of them, and the gift budget ran out in June.",
+    "minAge": 26, "maxAge": 35,
+    "leftCard":  { "label": "Go anyway", "effect": { "social": 10, "wealth": -15 }, "outcome": "You do the Macarena with somebody's great-aunt. Worth every penny." },
+    "rightCard": { "label": "Send your regrets", "effect": { "wealth": 5, "social": -10 }, "outcome": "You're not in a single photo. The bride notices." }
+  },
+  {
+    "id": "ya-slept-funny",
+    "prompt": "You slept slightly wrong and now you can't turn your head to the left. You're 28.",
+    "minAge": 27, "maxAge": 35,
+    "leftCard":  { "label": "See a physio", "effect": { "health": 10, "wealth": -10 }, "outcome": "She says you have the posture of a question mark. You get better." },
+    "rightCard": { "label": "Walk it off", "effect": { "health": -10, "energy": -5 }, "outcome": "For a month, you turn your whole body to check your mirrors." }
   }
 ]

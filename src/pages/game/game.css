@@ -10,6 +10,13 @@
     width: 100%;
 }
 
+.game-row {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    align-items: stretch;
+}
+
 .choices {
     justify-content: center;
     align-self: center;

@@ -1,15 +1,29 @@
 .choice {
   padding: 12px 20px;
-  border: 2px solid #ccc;
   border-radius: 8px;
-  background-color: #DAB1DA;
+  background-color: var(--button-colour);
+  box-shadow: 0 5px 0 var(--button-shadow);
+  color: var(--paper);
   cursor: pointer;
-  font-size: 16px;
-  width:40%;
-  height: 200px;
-transition: background-color 0.3s ease;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  width:20%;
+  height: 100px;
 }
 
-.choice:hover {
-    background-color: lightblue;
+/* Presses down when clicked */
+.choice:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.choice-a {
+  --button-colour: var(--accent);
+  --button-shadow: var(--accent-dark);
+}
+
+.choice-b {
+  --button-colour: var(--contrast);
+  --button-shadow: var(--contrast-dark);
 }

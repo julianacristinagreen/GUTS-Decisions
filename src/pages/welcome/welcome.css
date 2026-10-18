@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap');
-
 .welcome {
-  --ink: #201e1d;
-  --muted: #444141;
-  --paper: #f3f2f2;
-  --accent: #0088b0;
-
   min-height: 100vh;
   box-sizing: border-box;
   padding: 24px;
@@ -13,9 +6,6 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .welcome-text {
@@ -85,12 +75,12 @@
 
 .welcome-button.start {
   --button-colour: var(--accent);
-  --button-shadow: #004961;
+  --button-shadow: var(--accent-dark);
 }
 
 .welcome-button.replay {
-  --button-colour: #d1403a;
-  --button-shadow: #7a1f1b;
+  --button-colour: var(--contrast);
+  --button-shadow: var(--contrast-dark);
 }
 
 /* Wider screens: text on the left, tree on the right */

@@ -1,10 +1,11 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { ChoiceButton } from "../../components/buttons/buttons";
+import Stats from "../../components/stats/stats";
 import { newGame } from "../../engine/engine";
-import type { GameState, Stats } from "../../engine/types";
+import type { GameState, Stats as StatValues } from "../../engine/types";
 import "./death.css";
 
-const RAN_OUT: Record<keyof Stats, string> = {
+const RAN_OUT: Record<keyof StatValues, string> = {
     happiness: "Your happiness ran out.",
     wealth: "Your money ran out.",
     health: "Your health ran out.",
@@ -12,11 +13,11 @@ const RAN_OUT: Record<keyof Stats, string> = {
     energy: "Your energy ran out.",
 };
 
-function getCauseOfDeathText(game: GameState): string {
+function getCauseOfDeathText(game: GameState): { headline: string; cause: string } {
     if (!game.causeOfDeath || game.causeOfDeath === "old-age") {
-        return "You lived to 60.";
+        return { headline: "You lived to 60.", cause: "You made it!" };
     }
-    return `You died at ${game.age}. ${RAN_OUT[game.causeOfDeath]}`;
+    return { headline: `You died at ${game.age}.`, cause: RAN_OUT[game.causeOfDeath] };
 }
 
 export default function Death() {
@@ -32,13 +33,22 @@ export default function Death() {
     const liveAgain = () => navigate("/game", { state: { game: newGame(game.seed) } });
     const reveal = () => navigate("/decisiontree", { state: { game } });
 
+    const { headline, cause } = getCauseOfDeathText(game);
+
     return (
         <div className="death">
-            <h1>{getCauseOfDeathText(game)}</h1>
+            <div className="death-heading">
+                <h1>{headline}</h1>
+                <p className="death-cause">{cause}</p>
+            </div>
+
+            <div className="death-stats">
+                <Stats stats={game.stats} previewEffect={null} />
+            </div>
 
             <p className="death-question">Would you live this exact life again?</p>
 
-            <section className="choices" aria-label="Choose an option">
+            <section className="death-buttons" aria-label="Choose an option">
                 <ChoiceButton option="a" text="Live it again" onClick={liveAgain} />
                 <ChoiceButton option="b" text="No" onClick={reveal} />
             </section>

@@ -1,4 +1,26 @@
-/* Styles shared by every page. Page-specific styles live next to their page or component. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap');
+
+/* Styles shared by every page. */
+/* GUTS colours for some sick branding */
+
+:root {
+  --guts-blue: #1b4d87;
+  --guts-blue-dark: #103d79;
+  --guts-violet: #6b52c7;
+  --ink: #201e1d;                        /* main text */
+  --muted: #444141;                      /* secondary text */
+  --paper: #f3f2f2;                      /* page background */
+  --line: #d1d1d1;                       /* borders */
+  --accent: var(--guts-blue);              /* start button / left option */
+  --contrast: #8B79B1;                   /* replay button / right option */
+  --accent-dark: var(--guts-blue-dark);    /* blue button shadow */
+  --contrast-dark: #574c6e;              /* red button shadow */
+  --highlight: var(--guts-violet);         /* stat bars, numbers in the banner */
+}
+
 body {
   margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", sans-serif;
 }

@@ -61,5 +61,54 @@
     "minAge": 52, "maxAge": 60,
     "leftCard":  { "label": "Go", "effect": { "happiness": 20, "wealth": -20, "energy": -10 }, "outcome": "Temples, deserts, and a sunburn you'll talk about forever." },
     "rightCard": { "label": "Save it", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "The money's safe. The brochures stay on the coffee table." }
+  },
+  {
+    "id": "old-menu-squint",
+    "prompt": "You can't read the menu. You're holding it at arm's length and squinting, and the waiter is watching.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Get reading glasses", "effect": { "wealth": -5, "happiness": 5 }, "outcome": "You buy six pairs and lose all of them, mostly on top of your head." },
+    "rightCard": { "label": "Point at something", "effect": { "happiness": -5 }, "outcome": "You've ordered tripe." }
+  },
+  {
+    "id": "old-printer",
+    "prompt": "The printer won't connect. You've turned it off and on again. Your son says he's \"a bit busy\".",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Ring him again", "effect": { "energy": 5, "social": -5 }, "outcome": "He sighs, fixes it in four seconds and says \"you just press the button\"." },
+    "rightCard": { "label": "Fight it yourself", "effect": { "happiness": 10, "energy": -15 }, "outcome": "Three hours and two YouTube videos later, it prints. You've never been prouder." }
+  },
+  {
+    "id": "old-garden-centre",
+    "prompt": "It's Sunday, and you've just realised your favourite day out is now the garden centre.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Embrace it", "effect": { "happiness": 10, "wealth": -5 }, "outcome": "A hydrangea, a cream tea and a new trowel. Life is good." },
+    "rightCard": { "label": "Go clubbing instead", "effect": { "social": 5, "energy": -20 }, "outcome": "You last until half ten. The music is too loud and everyone is about twelve." }
+  },
+  {
+    "id": "old-hedge",
+    "prompt": "The neighbour's hedge is now two feet over the boundary. You know because you've been measuring it.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Write to the council", "effect": { "happiness": 5, "social": -15 }, "outcome": "You win. The Christmas cards stop." },
+    "rightCard": { "label": "Let it go", "effect": { "social": 5, "happiness": -5 }, "outcome": "It keeps growing. So does your resentment." }
+  },
+  {
+    "id": "old-facebook-comments",
+    "prompt": "You've discovered you can comment on your children's Facebook posts.",
+    "minAge": 52, "maxAge": 60,
+    "leftCard":  { "label": "Comment on everything", "effect": { "happiness": 15, "social": -5 }, "outcome": "\"Lovely photo darling, love Mum x\" under a pub crawl album. They see every one." },
+    "rightCard": { "label": "Just leave a like", "effect": { "social": 5 }, "outcome": "They don't realise you're watching. You see everything." }
+  },
+  {
+    "id": "old-cruise",
+    "prompt": "Your friends are booking a cruise. The average age on board is 74, and the buffet never closes.",
+    "minAge": 55, "maxAge": 60,
+    "leftCard":  { "label": "Book a cabin", "effect": { "happiness": 15, "wealth": -15, "health": -5 }, "outcome": "You gain half a stone and win the quiz every night." },
+    "rightCard": { "label": "I'm not that old", "effect": { "wealth": 5, "social": -5 }, "outcome": "You tell everyone you're too young for cruises, then look at their photos for an hour." }
+  },
+  {
+    "id": "old-who-are-you",
+    "prompt": "Someone in the shop greets you warmly by name. You have absolutely no idea who they are.",
+    "minAge": 50, "maxAge": 60,
+    "leftCard":  { "label": "Bluff it", "effect": { "social": 5, "energy": -10 }, "outcome": "Twenty minutes of chat and you never find out. They say \"see you Thursday\"." },
+    "rightCard": { "label": "Admit it", "effect": { "happiness": 5, "social": -5 }, "outcome": "It's your neighbour of fifteen years. She's very hurt." }
   }
 ]
