@@ -85,10 +85,10 @@
   },
   {
     "id": "teen-sport",
-    "prompt": "The coach offers you a place on the team. You like playing, but training would take up Saturdays and you're unsure about the commitment.",
+    "prompt": "The coach offers you a place on the team. You like playing, so you go to try out. Let's see how you do!",
     "minAge": 13, "maxAge": 17,
-    "leftCard":  { "label": "Join", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "Muddy Saturdays, sore legs, and a team that's got your back." },
-    "rightCard": { "label": "Say no", "effect": { "energy": 10, "health": -5 }, "outcome": "You keep your Saturdays and spend them on the sofa." }
+    "leftCard":  { "label": "Succeed", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "Congrats, you made it to the team!" },
+    "rightCard": { "label": "Failed", "effect": { "energy": 10, "health": -5 }, "outcome": "Sadly you didn't make it this time :(" }
   },
   {
     "id": "baby-3am",
