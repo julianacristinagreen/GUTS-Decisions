@@ -3,7 +3,7 @@ import Game from "./pages/game/game";
 import Death from "./pages/death/death";
 import DecisionTree from "./pages/decision-tree/decisionTree";
 import WelcomePage from "./pages/welcome/welcome";
-import ButtonMasher from "./components/button-masher/buttomMasher";
+import ButtonMasher from "./components/button-masher/buttonMasher";
 
 function App() {
   return (
