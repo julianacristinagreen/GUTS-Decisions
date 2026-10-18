@@ -1,4 +1,5 @@
 .buttonMasher {
+    box-shadow: 0 2px 6px var(--accent-dark);
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -36,7 +37,9 @@
 }
 
 .game-stats {
+    box-shadow: 0 2px 6px var(--accent-dark);
     border: 3px solid #d1d1d1;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     margin-left: auto;
@@ -86,7 +89,7 @@
     font-size: 18px;
     font-weight: 800;
     color: #f3f2f2;
-    background: #0088b0;
+    background: var(--guts-blue);
     box-shadow: 0 5px 0 #004961;
 }
 

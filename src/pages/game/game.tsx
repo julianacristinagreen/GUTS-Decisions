@@ -48,7 +48,7 @@ export default function Game() {
                 <>
                     <div className="choices">
                         {question.id === "teen-sport" ? (
-                        <button onClick={() => setShowMasher(true)}>
+                        <button className="teamTrial" onClick={() => setShowMasher(true)}>
                             Start Team Trial
                         </button>
                         ) : ( <>
