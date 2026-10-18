@@ -141,11 +141,11 @@ export default function Game() {
               <Math
                 onSuccess={() => {
                   setShowMath(false);
-                  makeChoice("left");
+                  makeChoice("right");
                 }}
                 onFailure={() => {
                   setShowMath(false);
-                  makeChoice("right");
+                  makeChoice("left");
                 }}
               />
             )}

@@ -67,7 +67,7 @@
     "prompt": "Your child needs help with their maths homework. You've got a maths qualification and don't recognise any of the methods.",
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Help anyway", "effect": { "social": -5, "happiness": -5 }, "outcome": "You get it wrong. The teacher writes \"please let them do it on their own\"." },
-    "rightCard": { "label": "Learn it together", "effect": { "social": 10, "energy": -10 }, "outcome": "It takes three hours. You both finally understand long division." }
+    "rightCard": { "label": "Learn it together", "effect": { "social": 10, "energy": -10 }, "outcome": "You got it right. That qualification paid off!" }
   },
   {
     "id": "adult-camera-on",

@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.teamTrial, .rollDice {
+.teamTrial, .rollDice, .mathQuestion  {
     display: block;
     margin: 16px auto 0;
     padding: 16px 32px;
