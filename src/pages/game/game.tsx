@@ -11,6 +11,7 @@ import "./game.css";
 import ButtonMasher from "../../components/button-masher/buttonMasher";
 import DiceGame from "../../components/dice/dice";
 import Math from "../../components/maths/maths";
+import SubwaySurfers from "../../components/subway-surfers/subwaySurfers";
 
 export default function Game() {
   const location = useLocation();
@@ -25,6 +26,7 @@ export default function Game() {
   const [showMasher, setShowMasher] = useState(false);
   const [showDice, setShowDice] = useState(false);
   const [showMath, setShowMath] = useState(false);
+  const [showChase, setShowChase] = useState(false);
 
   useEffect(() => {
     if (game && !game.alive) {
@@ -40,8 +42,8 @@ export default function Game() {
     }
 
     useEffect(() => {
-        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university" || question?.id == "adult-homework";
-        if (!question || pendingGame || isMinigame || showMasher || showDice) return;
+        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university" || question?.id == "adult-homework" || question?.id === "teen-police-chase";
+        if (!question || pendingGame || isMinigame || showMasher || showDice || showChase) return;
 
         const handleKeyPress = (event: KeyboardEvent) => {
             if (event.key === "ArrowLeft") {
@@ -53,7 +55,7 @@ export default function Game() {
 
         window.addEventListener("keydown", handleKeyPress);
         return () => window.removeEventListener("keydown", handleKeyPress);
-    }, [question, pendingGame, showMasher, showDice, game]);
+    }, [question, pendingGame, showMasher, showDice, showChase, game]);
 
     if (!game) {
         return <p>No game found. Please start a new game.</p>;
@@ -104,6 +106,13 @@ export default function Game() {
               >
                 Answer the Maths Question
               </button>
+            ) : question.id === "teen-police-chase" ? (
+              <button
+                className="runAway"
+                onClick={() => setShowChase(true)}
+              >
+                Run!
+              </button>
             ) : (
               <>
                 <ChoiceButton
@@ -146,6 +155,21 @@ export default function Game() {
                 onFailure={() => {
                   setShowMath(false);
                   makeChoice("left");
+                }}
+              />
+            )}
+
+            {showChase && (
+              <SubwaySurfers
+                seed={game.seed}
+                age={game.age}
+                onSuccess={() => {
+                  setShowChase(false);
+                  makeChoice("left");
+                }}
+                onFailure={() => {
+                  setShowChase(false);
+                  makeChoice("right");
                 }}
               />
             )}

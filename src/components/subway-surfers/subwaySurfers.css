@@ -1,0 +1,68 @@
+.chaseGame {
+    box-shadow: 0 2px 6px var(--accent-dark);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.chase-overlay {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.chase-title {
+    font-size: 36px;
+    color: #0088b0;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.chase-instructions {
+    text-align: center;
+    color: #DAB1DA;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.chase-stats {
+    margin: 10px auto;
+    font-size: 24px;
+}
+
+.chase-stat-label {
+    color: #DAB1DA;
+    margin-right: 10px;
+}
+
+.chase-stat-value {
+    color: #DAB1DA;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.chase-canvas {
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 4 / 3;
+    border: 3px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.chase-message {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #0088b0;
+}

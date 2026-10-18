@@ -21,6 +21,13 @@ export interface Decision {
     rightCard: Card;
     minAge: number;
     maxAge: number;
+    requires?: Requirement;
+}
+
+// The decision only shows up if this earlier decision was made with this pick
+export interface Requirement {
+    decisionId: string;
+    picked: "left" | "right";
 }
 
 export interface Card {
