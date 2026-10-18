@@ -1,23 +1,40 @@
 .banner{    
     width:100%;
     border-radius: 10px;
-    border: 1px solid #d1d1d1;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--line);
+    box-shadow: 0 2px 6px var(--accent-dark);
     max-height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
 }
 
-h1.welcome-title {
+.banner-title {
   margin: 0;
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 800;
   line-height: 0.86;
   letter-spacing: -0.05em;
 }
 
-.welcome-title .welcome-accent {
-  color: #0088b0;
+.banner-accent {
+  color: var(--accent);
+}
+
+.banner-text {
+  color: var(--muted);
+  text-align: right;
+}
+
+.banner-text p {
+  margin: 4px 0;
+}
+
+.banner-number {
+  color: var(--accent);
+  font-size: 28px;
+  font-weight: 800;
 }
