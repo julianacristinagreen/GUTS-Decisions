@@ -1,5 +1,5 @@
 h2 {
-    color: #DAB1DA;
+    color: var(--highlight);
     margin-top: 0px;
 }
 
