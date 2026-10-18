@@ -11,8 +11,10 @@
   --muted: #444141;                      /* secondary text */
   --paper: #f3f2f2;                      /* page background */
   --line: #d1d1d1;                       /* borders */
-  --accent: var(--guts-blue);              /* primary buttons n highlights */
-  --accent-dark: var(--guts-blue-dark);    /* button shadows */
+  --accent: var(--guts-blue);              /* start button / left option */
+  --contrast: #d1403a;                   /* replay button / right option */
+  --accent-dark: var(--guts-blue-dark);    /* blue button shadow */
+  --contrast-dark: #7a1f1b;              /* red button shadow */
   --highlight: var(--guts-violet);         /* stat bars, numbers in the banner */
 }
 

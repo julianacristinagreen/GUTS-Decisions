@@ -79,8 +79,8 @@
 }
 
 .welcome-button.replay {
-  --button-colour: #d1403a;
-  --button-shadow: #7a1f1b;
+  --button-colour: var(--contrast);
+  --button-shadow: var(--contrast-dark);
 }
 
 /* Wider screens: text on the left, tree on the right */
