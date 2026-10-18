@@ -18,5 +18,7 @@
 
 body {
   margin: 0;
+  background: var(--paper);
+  color: var(--ink);
   font-family: "Bricolage Grotesque", sans-serif;
 }
