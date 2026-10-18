@@ -76,5 +76,7 @@
 }
 
 .reveal-buttons .choice {
+  flex: 1;
+  width: auto;
   height: auto;
 }
