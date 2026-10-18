@@ -5,7 +5,13 @@ import { rngFor } from "./rng";
 const START_STATS: Stats = { happiness: 50, wealth: 50, health: 50, social: 50, energy: 50 };
 const MAX_AGE = 60;
 
-const ageStep = (age: number) => (age < 18 ? 3 : age < 35 ? 1 : 4);
+// Random step within the range for the current life stage
+const calculateAgeStep = (seed: string, age: number): number => {
+    const min = age < 18 ? 4 : age < 35 ? 4 : 5;
+    const max = age < 18 ? 6 : age < 35 ? 6 : 7;
+    const rng = rngFor(`${seed}:step`, age);
+    return min + Math.floor(rng() * (max - min + 1));
+}
 
 const clamp = (n: number) => Math.min(100, Math.max(0, n));
 
@@ -50,7 +56,7 @@ export const choose: Choose = (state, pick) => {
     }
 
     // Skip forward a year at a time until a card matches or the life runs out
-    let age = state.age + ageStep(state.age);
+    let age = state.age + calculateAgeStep(state.seed, state.age);
     let nextDecision = null;
     while (!nextDecision && age <= MAX_AGE) {
         nextDecision = generateDecision(state.seed, age, history);

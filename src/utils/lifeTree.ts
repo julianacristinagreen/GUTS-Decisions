@@ -1,7 +1,7 @@
 // Builds the SVG paths for the decision trees on the welcome page and the reveal.
 // The tree fits in a SIZE x SIZE box: the root sits on the left, and each level splits every branch into yes/no.
 // Branch 0 at each level is the top; child branch * 2 is "left", branch * 2 + 1 is "right".
-export const SIZE = 600;
+export const SIZE = 800;
 const LEVELS = 6;
 
 export function point(level: number, branch: number, levels = LEVELS) {
