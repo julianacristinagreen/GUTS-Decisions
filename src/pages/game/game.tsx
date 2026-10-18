@@ -40,7 +40,7 @@ export default function Game() {
     }
 
     useEffect(() => {
-        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university";
+        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university" || question?.id == "adult-homework";
         if (!question || pendingGame || isMinigame || showMasher || showDice) return;
 
         const handleKeyPress = (event: KeyboardEvent) => {
