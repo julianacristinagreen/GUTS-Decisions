@@ -29,7 +29,7 @@
   },
   {
     "id": "adult-burnout",
-    "prompt": "Your doctor is concerned about your stress and recommends time off. Work is demanding, and stepping away could help—but you worry about the consequences of being absent.",
+    "prompt": "Your doctor is concerned about your stress and recommends time off. Work is demanding, and stepping away could help but you worry about the consequences of being absent.",
     "minAge": 38, "maxAge": 49,
     "leftCard":  { "label": "Take the time", "effect": { "health": 15, "energy": 20, "wealth": -10 }, "outcome": "Two weeks of nothing. You remember who you are." },
     "rightCard": { "label": "Push through", "effect": { "wealth": 10, "health": -15, "energy": -10 }, "outcome": "You hit your targets. Your hands won't stop shaking." }
@@ -61,5 +61,54 @@
     "minAge": 36, "maxAge": 49,
     "leftCard":  { "label": "Go sober", "effect": { "health": 15, "social": -10 }, "outcome": "You sleep better. The pub quiz team misses you." },
     "rightCard": { "label": "One glass is fine", "effect": { "health": -10, "happiness": 5 }, "outcome": "It's never one glass." }
+  },
+  {
+    "id": "adult-homework",
+    "prompt": "Your child needs help with their maths homework. You've got a maths qualification and don't recognise any of the methods.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Help anyway", "effect": { "social": -5, "happiness": -5 }, "outcome": "You get it wrong. The teacher writes \"please let them do it on their own\"." },
+    "rightCard": { "label": "Learn it together", "effect": { "social": 10, "energy": -10 }, "outcome": "It takes three hours. You both finally understand long division." }
+  },
+  {
+    "id": "adult-camera-on",
+    "prompt": "Your 9 a.m. meeting has video. You're wearing a nice shirt and pyjama bottoms.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Camera on", "effect": { "wealth": 5, "social": -10 }, "outcome": "You stand up to grab a pen. Your pyjamas have dinosaurs on." },
+    "rightCard": { "label": "Camera's \"broken\"", "effect": { "energy": 10, "wealth": -5 }, "outcome": "Your camera has now been \"broken\" for three years." }
+  },
+  {
+    "id": "adult-sofa-noise",
+    "prompt": "You made a noise getting up off the sofa. Not a word. Just a noise.",
+    "minAge": 40, "maxAge": 49,
+    "leftCard":  { "label": "Start yoga", "effect": { "health": 10, "wealth": -5, "energy": -5 }, "outcome": "You can touch your toes again, briefly." },
+    "rightCard": { "label": "Accept it", "effect": { "happiness": 5, "health": -5 }, "outcome": "Now you make the noise sitting down too." }
+  },
+  {
+    "id": "adult-dripping-tap",
+    "prompt": "The kitchen tap has been dripping for four months. A plumber would cost £120. YouTube is free.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Fix it yourself", "effect": { "wealth": -15, "happiness": -10 }, "outcome": "You flood the kitchen. The emergency plumber costs £400." },
+    "rightCard": { "label": "Call a plumber", "effect": { "wealth": -10, "happiness": 5 }, "outcome": "Ten minutes and a washer. You feel slightly robbed, but dry." }
+  },
+  {
+    "id": "adult-class-whatsapp",
+    "prompt": "The class parents' WhatsApp has 214 unread messages. Somewhere in there is the date of the school trip.",
+    "minAge": 36, "maxAge": 49,
+    "leftCard":  { "label": "Read them all", "effect": { "social": 10, "energy": -15 }, "outcome": "You find the date, three feuds and an extremely lost jumper." },
+    "rightCard": { "label": "Mute it for a year", "effect": { "energy": 10, "social": -10 }, "outcome": "Your child is the only one without a packed lunch on the trip." }
+  },
+  {
+    "id": "adult-the-band",
+    "prompt": "Your uni mates want to get the band back together. You were average then, and you haven't touched a guitar in twenty years.",
+    "minAge": 40, "maxAge": 49,
+    "leftCard":  { "label": "Reform the band", "effect": { "happiness": 15, "social": 10, "wealth": -10 }, "outcome": "Your comeback gig is in a pub. Eleven people come; nine are related to you." },
+    "rightCard": { "label": "Leave it in the past", "effect": { "energy": 5, "happiness": -5 }, "outcome": "They play without you. They're still average, and you miss it." }
+  },
+  {
+    "id": "adult-two-day-hangover",
+    "prompt": "One glass of wine on a Tuesday gave you a two-day hangover. Now you're invited to a 40th on Saturday.",
+    "minAge": 40, "maxAge": 49,
+    "leftCard":  { "label": "Go big", "effect": { "social": 10, "health": -10, "energy": -10 }, "outcome": "You dance like it's 1999. You recover by the following Thursday." },
+    "rightCard": { "label": "Send a card", "effect": { "energy": 5, "social": -5 }, "outcome": "You're asleep by half nine. You've honestly never been happier." }
   }
 ]

@@ -89,5 +89,68 @@
     "minAge": 13, "maxAge": 17,
     "leftCard":  { "label": "Join", "effect": { "health": 15, "energy": -10, "social": 5 }, "outcome": "Muddy Saturdays, sore legs, and a team that's got your back." },
     "rightCard": { "label": "Say no", "effect": { "energy": 10, "health": -5 }, "outcome": "You keep your Saturdays and spend them on the sofa." }
+  },
+  {
+    "id": "baby-3am",
+    "prompt": "It's 3 a.m. The house is silent and everyone is finally asleep. You've just had a thought, and you'd like to share it.",
+    "minAge": 0, "maxAge": 2,
+    "leftCard":  { "label": "Scream", "effect": { "happiness": 10, "social": -5 }, "outcome": "Both parents are up within seconds. You were just saying hello." },
+    "rightCard": { "label": "Go back to sleep", "effect": { "energy": 10 }, "outcome": "Your parents wake up at 7 a.m. and panic because you're too quiet." }
+  },
+  {
+    "id": "toddler-why",
+    "prompt": "Your dad has just explained why the sky is blue. You have one more question. You always have one more question.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Why?", "effect": { "happiness": 10, "social": -5 }, "outcome": "Forty-five whys later he says \"because it just is\" and goes to lie down." },
+    "rightCard": { "label": "Accept it", "effect": { "energy": 5 }, "outcome": "He looks relieved, and slightly disappointed." }
+  },
+  {
+    "id": "toddler-checkout",
+    "prompt": "The supermarket has put the chocolate at the checkout, at exactly your eye level. Your mum has said no once already.",
+    "minAge": 3, "maxAge": 5,
+    "leftCard":  { "label": "Full meltdown", "effect": { "happiness": 10, "social": -10 }, "outcome": "You lie face down by the tills and refuse to move. You get the chocolate. Your mum gets looks." },
+    "rightCard": { "label": "Ask nicely", "effect": { "social": 5, "happiness": -5 }, "outcome": "She says \"maybe next time\". Next time never comes." }
+  },
+  {
+    "id": "child-wobbly-tooth",
+    "prompt": "Your wobbly tooth is hanging on by a thread. Your uncle has a piece of string and a door.",
+    "minAge": 6, "maxAge": 9,
+    "leftCard":  { "label": "The door method", "effect": { "wealth": 10, "health": -5 }, "outcome": "It works instantly. The tooth fairy leaves you a whole pound." },
+    "rightCard": { "label": "Leave it", "effect": { "happiness": -5 }, "outcome": "It falls out three days later, into your Weetabix." }
+  },
+  {
+    "id": "child-sleepover",
+    "prompt": "It's 11 p.m. at your first sleepover. You're homesick, and their house smells weird.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Tough it out", "effect": { "social": 10, "energy": -10 }, "outcome": "You stay up until 4 a.m. eating crisps and telling ghost stories." },
+    "rightCard": { "label": "Call your mum", "effect": { "happiness": 5, "social": -10 }, "outcome": "She collects you in her dressing gown. Nobody at school ever forgets." }
+  },
+  {
+    "id": "child-card-trade",
+    "prompt": "At break, a kid offers you three of his cards for your one shiny one. He says it's a fair trade. He seems very sure about that.",
+    "minAge": 6, "maxAge": 12,
+    "leftCard":  { "label": "Trade", "effect": { "social": 10, "wealth": -10 }, "outcome": "You find out later your card was worth forty quid. He works in finance now." },
+    "rightCard": { "label": "Keep it", "effect": { "wealth": 5, "social": -5 }, "outcome": "It lives in a plastic sleeve in a drawer. You never play with it again." }
+  },
+  {
+    "id": "teen-wrong-chat",
+    "prompt": "You've just sent a message slagging off Tom to the group chat. The one with Tom in it.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Say you were hacked", "effect": { "social": -10, "happiness": 5 }, "outcome": "Nobody believes you. Apparently your hacker also has a problem with Tom." },
+    "rightCard": { "label": "Apologise to Tom", "effect": { "social": 5, "happiness": -5 }, "outcome": "It's painfully awkward for a day. You're mates again by Friday." }
+  },
+  {
+    "id": "teen-fringe",
+    "prompt": "You want a fringe. A YouTube video makes it look easy, and the kitchen scissors are right there.",
+    "minAge": 13, "maxAge": 17,
+    "leftCard":  { "label": "Grab the scissors", "effect": { "happiness": 5, "social": -10 }, "outcome": "Shorter than planned. Wonkier than planned. You wear a hat for a month." },
+    "rightCard": { "label": "Book a hairdresser", "effect": { "wealth": -5, "social": 5 }, "outcome": "It looks great. You tell everyone you did it yourself." }
+  },
+  {
+    "id": "teen-dad-driving",
+    "prompt": "Your dad offers to teach you to drive for free. He gasps every time you go near a kerb.",
+    "minAge": 15, "maxAge": 17,
+    "leftCard":  { "label": "Let him", "effect": { "wealth": 10, "happiness": -10 }, "outcome": "You learn to drive. He learns to pray." },
+    "rightCard": { "label": "Pay for lessons", "effect": { "wealth": -10, "happiness": 5 }, "outcome": "Your instructor is called Dave, and nothing you do can surprise him." }
   }
 ]
