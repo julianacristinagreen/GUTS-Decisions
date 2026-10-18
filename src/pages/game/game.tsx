@@ -7,11 +7,13 @@ import { ChoiceButton } from "../../components/buttons/buttons";
 import { choose } from "../../engine/engine";
 import type { GameState } from "../../engine/types";
 import "./game.css";
+import ButtonMasher from "../../components/button-masher/buttonMasher";
 
 export default function Game() {
     const location = useLocation();
     const navigate = useNavigate();
     const [game, setGame] = useState<GameState | null>(location.state?.game ?? null);
+    const [showMasher, setShowMasher] = useState(false);
 
     useEffect(() => {
         if (game && !game.alive) {
@@ -45,6 +47,11 @@ export default function Game() {
             {question ? (
                 <>
                     <div className="choices">
+                        {question.id === "teen-sport" ? (
+                        <button className="teamTrial" onClick={() => setShowMasher(true)}>
+                            Start Team Trial
+                        </button>
+                        ) : ( <>
                         <ChoiceButton
                             option="a"
                             text={question.leftCard.label}
@@ -59,6 +66,21 @@ export default function Game() {
                             onMouseEnter={() => setHovered("right")}
                             onMouseLeave={() => setHovered(null)}
                         />
+                        </>
+                        )}
+
+                        {showMasher && (
+                            <ButtonMasher
+                                onSuccess={() => {
+                                    setShowMasher(false);
+                                    makeChoice("left");
+                                }}
+                                onFailure={() => {
+                                    setShowMasher(false);
+                                    makeChoice("right");
+                                }}
+                            />
+                        )}
                     </div>
                 </>
             ) : (
