@@ -1,7 +1,7 @@
 [
   {
     "id": "ya-university",
-    "prompt": "You have a university offer and a chance to work at your friend's family garage. One asks you to invest in a future you can't see yet; the other pays now.",
+    "prompt": "You have a university offer and a chance to work at your friend's family garage. One asks you to invest in a future you can't see yet; the other pays now. Roll the dice to determine your decision...",
     "minAge": 18, "maxAge": 19,
     "leftCard":  { "label": "University", "effect": { "wealth": -15, "social": 10, "happiness": 5 }, "outcome": "Three years, a lot of debt, and friends you'll keep for life." },
     "rightCard": { "label": "The garage", "effect": { "wealth": 15, "social": -5 }, "outcome": "You're earning while your friends are borrowing. You miss them sometimes." }
