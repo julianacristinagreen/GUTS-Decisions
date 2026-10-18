@@ -37,12 +37,13 @@ export default function Game() {
         <>
         <Banner game={game}/>
 
-        <Stats stats={game.stats} previewEffect={effect ?? null}/>
+        <div className="game-row">
+            {question && <Card question={question} />}
+            <Stats stats={game.stats} previewEffect={effect ?? null}/>
+        </div>
 
             {question ? (
                 <>
-                    <Card question={question} />
-
                     <div className="choices">
                         <ChoiceButton
                             option="a"

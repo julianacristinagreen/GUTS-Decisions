@@ -1,5 +1,5 @@
 .card-h1 {
-    color: lightblue; 
+    color: var(--ink);
     justify-content: start;
     align-content: start;
     display: grid;
@@ -8,20 +8,17 @@
 
 .card-div {
     border-radius: 10px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid var(--line);
     padding: 10px;
-    max-width: 50%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    max-height: 50%;
+    box-shadow: 0 2px 6px var(--accent-dark);
     justify-content: start;
     align-content: start;
     display: grid;
-    width:40%;
-    margin-left: 25px;
+    flex: 2;
 }
 
 .card-p{
-    color: rgb(92, 92, 92);
+    color: var(--muted);
     align-content: center;
     justify-content: left;
     display: grid;
