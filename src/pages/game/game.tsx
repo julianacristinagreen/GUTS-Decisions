@@ -10,6 +10,7 @@ import type { GameState } from "../../engine/types";
 import "./game.css";
 import ButtonMasher from "../../components/button-masher/buttonMasher";
 import DiceGame from "../../components/dice/dice";
+import SubwaySurfers from "../../components/subway-surfers/subwaySurfers";
 
 export default function Game() {
     const location = useLocation();
@@ -20,6 +21,7 @@ export default function Game() {
     const [hovered, setHovered] = useState<"left" | "right" | null>(null);
     const [showMasher, setShowMasher] = useState(false);
     const [showDice, setShowDice] = useState(false);
+    const [showChase, setShowChase] = useState(false);
 
     useEffect(() => {
         if (game && !game.alive) {
@@ -65,6 +67,10 @@ export default function Game() {
                         <button className="rollDice" onClick={() => setShowDice(true)} >
                             Roll the Dice
                         </button>
+                        ) : question.id === "teen-police-chase" ? (
+                        <button className="runAway" onClick={() => setShowChase(true)} >
+                            Run!
+                        </button>
                         ) : ( <>
                         <ChoiceButton
                             option="a"
@@ -107,6 +113,21 @@ export default function Game() {
                             }}
                             onFailure={() => {
                             setShowDice(false);
+                            makeChoice("right");
+                            }}
+                        />
+                        )}
+
+                        {showChase && (
+                        <SubwaySurfers
+                            seed={game.seed}
+                            age={game.age}
+                            onSuccess={() => {
+                            setShowChase(false);
+                            makeChoice("left");
+                            }}
+                            onFailure={() => {
+                            setShowChase(false);
                             makeChoice("right");
                             }}
                         />

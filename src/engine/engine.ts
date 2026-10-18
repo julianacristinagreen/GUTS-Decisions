@@ -15,9 +15,16 @@ const calculateAgeStep = (seed: string, age: number): number => {
 
 const clamp = (n: number) => Math.min(100, Math.max(0, n));
 
+// Decisions without a requirement are always allowed
+const requirementMet = (decision: Decision, history: HistoryEntry[]): boolean => {
+    if (!decision.requires) return true;
+    const { decisionId, picked } = decision.requires;
+    return history.some(h => h.decisionId === decisionId && h.picked === picked);
+}
+
 export const generateDecision = (seed: string, age: number, history: HistoryEntry[]): Decision | null => {
     const seen = new Set(history.map(h => h.decisionId));
-    const validPool = allDecisions.filter(d => d.minAge <= age && age <= d.maxAge && !seen.has(d.id));
+    const validPool = allDecisions.filter(d => d.minAge <= age && age <= d.maxAge && !seen.has(d.id) && requirementMet(d, history));
     if (validPool.length === 0) return null;
     const rng = rngFor(seed, age);
     return validPool[Math.floor(rng() * validPool.length)];
