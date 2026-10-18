@@ -15,7 +15,7 @@
   },
   {
     "id": "child-bike",
-    "prompt": "The hill is steeper than it looked. Your friends are waiting at the bottom, and you don't know how they'll react if you turn back.",
+    "prompt": "You're out on your bike with friends. The hill is steeper than it looked. Your friends are waiting at the bottom, and you don't know how they'll react if you turn back.",
     "minAge": 6, "maxAge": 12,
     "leftCard":  { "label": "Do it", "effect": { "happiness": 10, "health": -15 }, "outcome": "You're flying down the hill, on top of the world and then you crash." },
     "rightCard": { "label": "Walk it down", "effect": { "social": -10 }, "outcome": "They call you chicken and make noises for a week." }

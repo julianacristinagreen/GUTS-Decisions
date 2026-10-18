@@ -15,7 +15,7 @@
   },
   {
     "id": "ya-gym",
-    "prompt": "You want to feel fitter, and a nearby gym is offering a discounted membership. You've paid for good intentions before; your routine is already full.",
+    "prompt": "You want to feel fitter, and a nearby gym is offering a discounted membership. You've tried going before and your routine is already full.",
     "minAge": 18, "maxAge": 35,
     "leftCard":  { "label": "Sign up", "effect": { "health": 15, "wealth": -5, "energy": -5 }, "outcome": "You actually keep going. Even you're surprised." },
     "rightCard": { "label": "Not for me", "effect": { "energy": 5, "health": -5 }, "outcome": "You walk past it every day on the way to the takeaway." }
@@ -29,21 +29,21 @@
   },
   {
     "id": "ya-move-in",
-    "prompt": "Your partner wants to move in together. Sharing rent would help, but it would also make the relationship—and your home—harder to separate.",
+    "prompt": "Your partner wants to move in together. Sharing rent would help, but it would also make the relationship and home harder to separate.",
     "minAge": 23, "maxAge": 35,
     "leftCard":  { "label": "Yes", "effect": { "social": 10, "happiness": 10, "wealth": 5 }, "outcome": "You split the rent, and argue about the thermostat." },
     "rightCard": { "label": "Not yet", "effect": { "social": -15, "happiness": -5 }, "outcome": "It goes quiet. A month later, they've moved on." }
   },
   {
     "id": "ya-night-out",
-    "prompt": "It's Friday and you're exhausted. Your friends are going out, and you've missed the last few times; tomorrow is the only day you can catch up on rest.",
+    "prompt": "It's Friday and you're exhausted. Your friends are going out, and you've missed the last few times but tomorrow is the only day you can catch up on rest.",
     "minAge": 18, "maxAge": 30,
     "leftCard":  { "label": "Go out", "effect": { "social": 10, "energy": -15, "health": -5 }, "outcome": "Brilliant night. Sunday comes and you're still recovering." },
     "rightCard": { "label": "Early night", "effect": { "energy": 15, "social": -5 }, "outcome": "Ten hours of sleep. You've never felt more alive." }
   },
   {
     "id": "ya-first-flat",
-    "prompt": "Your friends have a room in a shared flat. Moving out would mean more independence and rent; staying home would help you save and keep familiar routines.",
+    "prompt": "Your friends have a room in a shared flat. Moving out would mean more independence and rent but staying home would help you save and keep your routines.",
     "minAge": 18, "maxAge": 22,
     "leftCard":  { "label": "Move in", "effect": { "social": 15, "wealth": -10, "energy": -5 }, "outcome": "Nobody ever washes up. It's the best year of your life." },
     "rightCard": { "label": "Stay at home", "effect": { "wealth": 15, "social": -10 }, "outcome": "You save a fortune. Your mum still does your washing." }
@@ -71,7 +71,7 @@
   },
   {
     "id": "ya-breakup",
-    "prompt": "You still care about each other, but the same problems keep returning. Staying feels familiar; leaving means accepting an uncertain next chapter.",
+    "prompt": "You and your partner are fighting. You still care about each other, but the same problems keep returning. Staying feels familiar and leaving means accepting an uncertain next chapter.",
     "minAge": 20, "maxAge": 30,
     "leftCard":  { "label": "End it", "effect": { "happiness": -10, "energy": 10 }, "outcome": "It hurts for months. Then one morning you feel lighter." },
     "rightCard": { "label": "Stay", "effect": { "social": 5, "happiness": -10 }, "outcome": "Nothing's wrong, exactly. Nothing's right either." }
@@ -85,7 +85,7 @@
   },
   {
     "id": "ya-dog",
-    "prompt": "A rescue dog needs a home. You want to help, but adoption means years of daily care, time, and costs—not just the first happy week.",
+    "prompt": "A rescue dog needs a home. You want to help, but adoption means years of daily care, time, and costs, not just the first happy week.",
     "minAge": 22, "maxAge": 35,
     "leftCard":  { "label": "Adopt him", "effect": { "happiness": 15, "wealth": -10, "health": 5 }, "outcome": "He chews your shoes and walks you twice a day." },
     "rightCard": { "label": "Not now", "effect": { "wealth": 5, "happiness": -5 }, "outcome": "You think about those eyes for a week." }
@@ -99,7 +99,7 @@
   },
   {
     "id": "ya-city-move",
-    "prompt": "A job in London would pay more and bring a fresh start. Your friends and family are here, and building a new support network could take time.",
+    "prompt": "You are offered a job in London. It would pay more and bring a fresh start. But your friends and family are here, and building a new support network could take time.",
     "minAge": 22, "maxAge": 32,
     "leftCard":  { "label": "Move", "effect": { "wealth": 15, "social": -15, "happiness": 5 }, "outcome": "The city is huge and exciting, and lonely at first." },
     "rightCard": { "label": "Stay", "effect": { "social": 10, "wealth": -5 }, "outcome": "Sunday dinners with your family, every week." }
@@ -197,7 +197,7 @@
   },
   {
     "id": "ya-slept-funny",
-    "prompt": "You slept slightly wrong and now you can't turn your head to the left. You're 28.",
+    "prompt": "You slept slightly wrong and now you can't turn your head to the left. You're geeting unc.",
     "minAge": 27, "maxAge": 35,
     "leftCard":  { "label": "See a physio", "effect": { "health": 10, "wealth": -10 }, "outcome": "She says you have the posture of a question mark. You get better." },
     "rightCard": { "label": "Walk it off", "effect": { "health": -10, "energy": -5 }, "outcome": "For a month, you turn your whole body to check your mirrors." }

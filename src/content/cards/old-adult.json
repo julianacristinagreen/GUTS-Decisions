@@ -29,7 +29,7 @@
   },
   {
     "id": "old-reunion",
-    "prompt": "Your school reunion is coming up. You wonder who you'll be glad to see—and whether returning to that room will feel like reconnecting or revisiting old roles.",
+    "prompt": "Your school reunion is coming up. You wonder who you'll be glad to see and whether returning to that room will feel like reconnecting or revisiting old roles.",
     "minAge": 55, "maxAge": 60,
     "leftCard":  { "label": "Go", "effect": { "social": 15, "happiness": 5, "energy": -5 }, "outcome": "Everyone's older. Everyone's exactly the same." },
     "rightCard": { "label": "Skip it", "effect": { "energy": 5, "social": -5 }, "outcome": "You see the photos later. Mr. Henderson's house is still there." }
