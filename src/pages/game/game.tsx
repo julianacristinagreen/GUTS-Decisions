@@ -8,12 +8,14 @@ import { choose } from "../../engine/engine";
 import type { GameState } from "../../engine/types";
 import "./game.css";
 import ButtonMasher from "../../components/button-masher/buttonMasher";
+import DiceGame from "../../components/dice/dice";
 
 export default function Game() {
     const location = useLocation();
     const navigate = useNavigate();
     const [game, setGame] = useState<GameState | null>(location.state?.game ?? null);
     const [showMasher, setShowMasher] = useState(false);
+    const [showDice, setShowDice] = useState(false);
 
     useEffect(() => {
         if (game && !game.alive) {
@@ -51,6 +53,10 @@ export default function Game() {
                         <button className="teamTrial" onClick={() => setShowMasher(true)}>
                             Start Team Trial
                         </button>
+                        ) : question.id === "ya-university" ? (
+                        <button className="rollDice" onClick={() => setShowDice(true)} >
+                            Roll the Dice
+                        </button>
                         ) : ( <>
                         <ChoiceButton
                             option="a"
@@ -80,6 +86,22 @@ export default function Game() {
                                     makeChoice("right");
                                 }}
                             />
+                        )}
+
+                        {showDice && (
+                        <DiceGame
+                            onRoll={(value) => {
+                            console.log("Dice rolled:", value);
+                            }}
+                            onSuccess={() => {
+                            setShowDice(false);
+                            makeChoice("left");
+                            }}
+                            onFailure={() => {
+                            setShowDice(false);
+                            makeChoice("right");
+                            }}
+                        />
                         )}
                     </div>
                 </>
