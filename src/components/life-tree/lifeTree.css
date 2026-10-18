@@ -6,18 +6,18 @@
 }
 
 .life-tree .choice {
-  stroke: #d7d3d3;
+  stroke: var(--line);
   stroke-width: 1;
 }
 
 .life-tree .start {
-  fill: #0088b0;
+  fill: var(--accent);
 }
 
 /* The chosen life draws itself in; LifeTree's onFinish fires when it ends.
    pathLength={1} on the path means a dash of 1 covers the whole line. */
 .life-tree .life {
-  stroke: #0088b0;
+  stroke: var(--accent);
   stroke-width: 4;
   stroke-linecap: round;
   stroke-dasharray: 1;
