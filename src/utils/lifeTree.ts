@@ -60,3 +60,16 @@ export function randomLife() {
     }
     return path;
 }
+
+
+// 4 choices in the tree, drawn for the first drawn levels of a tree x levels deep
+export function FourChoices(levels = LEVELS, drawn = levels) {
+    const paths: { level: number; d: string }[] = [];
+    for (let level = 0; level < drawn; level++) {
+        for (let branch = 0; branch < 2; branch++) {
+            paths.push({ level, d: curve(level, branch, branch * 2, levels) });      // yes
+            paths.push({ level, d: curve(level, branch, branch * 2 + 1, levels) });  // no
+        }
+    }
+    return paths;
+}

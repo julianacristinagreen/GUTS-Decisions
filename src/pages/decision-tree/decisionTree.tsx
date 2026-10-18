@@ -5,7 +5,7 @@ import { allDecisions } from "../../engine/cards";
 import { newGame } from "../../engine/engine";
 import { randomSeed } from "../../engine/rng";
 import type { GameState } from "../../engine/types";
-import { allChoices, branchesFor, lifePath, point, SIZE } from "../../utils/lifeTree";
+import { FourChoices, branchesFor, lifePath, point, SIZE } from "../../utils/lifeTree";
 import "./decisionTree.css";
 
 // 2^30 branches can't be drawn, so only the first few levels of are shown
@@ -30,7 +30,7 @@ export default function DecisionTree() {
 
     const picks = game.history.map((h) => h.picked);
     const branches = branchesFor(picks);
-    const choices = allChoices(steps, Math.min(steps, SHOWN_LEVELS));
+    const choices = FourChoices(steps, Math.min(steps, SHOWN_LEVELS));
 
     // The node for the current decision on the overview
     const here = point(step === 0 ? steps : step - 1, branches[step === 0 ? steps : step - 1], steps);
