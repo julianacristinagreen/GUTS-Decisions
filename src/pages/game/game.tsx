@@ -27,15 +27,31 @@ export default function Game() {
         }
     }, [game, navigate]);
 
-    if (!game) {
-        return <p>No game found. Please start a new game.</p>;
-    }
-
-    const question = game.currentDecision;
+    const question = game?.currentDecision;
     const makeChoice = (pick: "left" | "right") => {
-        if (pendingGame) return;
+        if (!game || pendingGame) return;
         setOutcome(pick === "left" ? question!.leftCard.outcome : question!.rightCard.outcome);
         setPendingGame(choose(game, pick));
+    }
+
+    useEffect(() => {
+        const isMinigame = question?.id === "teen-sport" || question?.id === "ya-university";
+        if (!question || pendingGame || isMinigame || showMasher || showDice) return;
+
+        const handleKeyPress = (event: KeyboardEvent) => {
+            if (event.key === "ArrowLeft") {
+                makeChoice("left");
+            } else if (event.key === "ArrowRight") {
+                makeChoice("right");
+            }
+        }
+
+        window.addEventListener("keydown", handleKeyPress);
+        return () => window.removeEventListener("keydown", handleKeyPress);
+    }, [question, pendingGame, showMasher, showDice, game]);
+
+    if (!game) {
+        return <p>No game found. Please start a new game.</p>;
     }
 
     const finishOutcome = () => {
